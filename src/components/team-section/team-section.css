@@ -1,0 +1,23 @@
+#team-section {
+    margin-top: 4%;
+}
+
+#team-header-text {
+padding-bottom: 1%;
+font-family: 'Roboto Mono';
+font-size: 38px;
+}
+
+#team-card-row {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  white-space: nowrap;
+  cursor: grab;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+#team-card-row::-webkit-scrollbar {
+  display: none;
+}

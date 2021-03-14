@@ -1,0 +1,44 @@
+#header-section {
+  height: 100%;
+  width: 100%;
+}
+
+#logo {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  margin: auto;
+  margin-top: 2%;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-image: url('../../resources/logo.png');
+}
+
+#hamburger-menu {
+  position: absolute;
+  height: 75px;
+  width: 75px;
+  background-color: green;
+  z-index: 30;
+  top: 5px;
+  left: 5px;
+  cursor: pointer;
+}
+
+#camp-description-section {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1%;
+}
+
+#camp-description-text {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+  padding-top: 250px;
+}

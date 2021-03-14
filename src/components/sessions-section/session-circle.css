@@ -1,0 +1,29 @@
+.session-circle {
+  height: 320px;
+  width: 320px;
+  background: linear-gradient(105.06deg, #ffc071 4.03%, #ff8d4b 107.3%);
+  box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 360px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap:wrap;
+  flex-direction: column;
+  color: white;
+}
+
+
+.session-circle-content-wrapper {
+    padding-top: 10%;
+}
+
+.session-circle-header {
+    font-weight: 900;
+    font-size: 40px;
+}
+
+.session-circle-desc {
+    font-size: 24px;
+    font-weight: 300;
+    transform: translateY(80%)
+}

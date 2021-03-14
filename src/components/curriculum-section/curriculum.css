@@ -1,0 +1,45 @@
+#curriculum-section {
+  width: 800px;
+  height: 400px;
+  background: linear-gradient(105.06deg, #ffc071 4.03%, #f57d39 107.3%);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  border-radius: 28px;
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.4);
+  color: white;
+}
+
+#curriculum-section-header {
+    text-align: center;
+    
+    font-size: 48px;
+    font-family: 'Roboto Mono';
+    padding-top: 5%;
+}
+
+#list-section {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.curriculum-list {
+    text-align: left;
+    font-size: 24px;
+}
+
+.curriculum-list > li {
+    padding-bottom: 2%;
+}
+
+#curriculum-list-1 {
+    float: left;
+}
+
+#curriculum-list-2 {
+    float: right;
+    padding-right: 2%;
+}
+
