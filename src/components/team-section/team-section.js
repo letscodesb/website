@@ -32,7 +32,7 @@ class TeamSection extends Component {
         name: "Jean Hoang",
         title: "Head of Communications and Lab Leader",
         bio:
-          "Jean Hoang is a rising junior at Stratford High School and the Spring Branch Academic Institute, a program for academically gifted students. She plans to pursue computer science and artificial intelligence when she enters college. She has been programming for 7 years and has developed a website for her parents’ dental practice, Dental Suite Pa. Jean also worked with an AI4All summer camp hosted by Stanford University, which focussed primarily on computational biology. Outside of programming and school, Jean practices Chinese martial arts. She also loves to read, watch K-Dramas and anime, and listen to K-Pop.",
+          "Jean Hoang is a rising junior at Stratford High School and the Spring Branch Academic Institute, a program for academically gifted students. She plans to pursue computer science and artificial intelligence when she enters college. She has been programming for 7 years and has developed a website for her parents’ dental practice, Dental Suite. Jean also worked with an AI4All summer camp hosted by Stanford University, which focussed primarily on computational biology. Outside of programming and school, Jean practices Chinese martial arts. She also loves to read, watch K-Dramas and anime, and listen to K-Pop.",
         img: jeanImage,
         longBio: true,
       },
@@ -44,7 +44,7 @@ class TeamSection extends Component {
         img: noImage,
       },
       {
-        name: "Joseph Buldoc",
+        name: "Joseph Bulduc",
         title: "Lab Leader",
         bio:
           "Joseph Buldoc is a rising senior at Stratford High School. He plans to pursue Computer Science and Engineering when he enters college and has been programming for 4 years. Outside of programming and school, Joseph enjoys creating deepfakes, 3D printing, and playing chess.",
