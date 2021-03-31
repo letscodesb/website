@@ -28,7 +28,7 @@ export default class SignupSection extends Component {
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.resetForm = this.resetForm.bind(this);
-    this.president_email = "neilaylor@hotmail.com"; // this is temporary devon i am not stealing your position
+    this.president_email = "devon.s.schwartz@gmail.com"; 
   }
 
   handleChange(event) {
