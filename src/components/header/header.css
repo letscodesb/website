@@ -6,7 +6,6 @@
 #logo {
   height: 200px;
   width: 200px;
-  position: absolute;
   margin: auto;
   margin-top: 2%;
   left: 0;
@@ -40,7 +39,6 @@
   font-size: 18px;
   font-weight: 300;
   line-height: 30px;
-  padding-top: 25vh;
 }
 
 .fadeable {
@@ -58,13 +56,11 @@
 
 @media only screen and (max-width: 40em) {
   #camp-description-text {
-    padding-top: 70vw;
   }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   #camp-description-text {
-    padding-top: 25vw;
   }
 }
 
