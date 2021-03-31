@@ -125,8 +125,8 @@ export default class SignupSection extends Component {
   }
 
   handleInputFocus(event) {
-    event.preventDefault();
-    this.setState({ visibility: true });
+    e.preventDefault();
+    e.target.focus({ preventScroll: true });
   }
 
   handleInputBlur($) {}
