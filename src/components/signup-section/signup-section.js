@@ -126,11 +126,10 @@ export default class SignupSection extends Component {
 
   handleInputFocus($) {
     $.preventDefault();
-    $.fn.fullpage.setAutoScrolling(false);
+    this.setState({ visibility: true });
   }
 
   handleInputBlur($) {
-    $.fn.fullpage.setAutoScrolling(true);
   }
 
   render() {
