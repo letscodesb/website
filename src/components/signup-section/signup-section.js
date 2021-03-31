@@ -124,8 +124,8 @@ export default class SignupSection extends Component {
     observer.observe(this.domRef.current);
   }
 
-  handleInputFocus($) {
-    $.preventDefault();
+  handleInputFocus(event) {
+    event.preventDefault();
     this.setState({ visibility: true });
   }
 
@@ -157,9 +157,8 @@ export default class SignupSection extends Component {
               onChange={this.handleChange}
               value={this.state.studentFirstName}
               ref={this.inputElement}
-              focus={this.handleInputFocus}
+              onFocus={this.handleInputFocus}
               blur={this.handleInputBlur}
-              autofocus="false"
             ></input>
             <input
               name="studentLastName"
@@ -169,7 +168,7 @@ export default class SignupSection extends Component {
               onChange={this.handleChange}
               value={this.state.studentLastName}
               ref={this.inputElement}
-              focus={this.handleInputFocus}
+              onFocus={this.handleInputFocus}
               blur={this.handleInputBlur}
               autofocus="false"
             ></input>
@@ -184,7 +183,7 @@ export default class SignupSection extends Component {
               onChange={this.handleChange}
               value={this.state.parentPhone}
               ref={this.inputElement}
-              focus={this.handleInputFocus}
+              onFocus={this.handleInputFocus}
               blur={this.handleInputBlur}
               autofocus="false"
             ></input>
@@ -196,7 +195,7 @@ export default class SignupSection extends Component {
               onChange={this.handleChange}
               value={this.state.parentEmail}
               ref={this.inputElement}
-              focus={this.handleInputFocus}
+              onFocus={this.handleInputFocus}
               blur={this.handleInputBlur}
               autofocus="false"
             ></input>
@@ -211,7 +210,7 @@ export default class SignupSection extends Component {
               onChange={this.handleChange}
               value={this.state.studentPhone}
               ref={this.inputElement}
-              focus={this.handleInputFocus}
+              onFocus={this.handleInputFocus}
               blur={this.handleInputBlur}
               autofocus="false"
             ></input>
@@ -223,7 +222,7 @@ export default class SignupSection extends Component {
               onChange={this.handleChange}
               value={this.state.studentEmail}
               ref={this.inputElement}
-              focus={this.handleInputFocus}
+              onFocus={this.handleInputFocus}
               blur={this.handleInputBlur}
               autofocus="false"
             ></input>
