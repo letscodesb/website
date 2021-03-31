@@ -1,0 +1,192 @@
+#contact-section {
+  margin-bottom: 10vh;
+}
+
+#contact-section-header {
+  text-align: center;
+}
+
+#contact-section-header-text {
+  font-family: "Roboto Mono";
+  font-size: 58px;
+  font-weight: 400;
+}
+
+#contact-section-blobs {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 4%;
+}
+
+.contact-blob {
+  /*
+  height: 420px;
+  width: 420px;
+  */
+  height: 45vh;
+  width: 45vh;
+  background: #f9f9f9;
+  border: 1px solid #ddd5d5;
+  box-sizing: border-box;
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.blob-header {
+  font-weight: 300;
+  font-size: 48px;
+  margin-bottom: 0;
+}
+
+.blob-subheader {
+  font-weight: 200;
+  font-size: 40px;
+}
+
+.email-line,
+.phone-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 80%;
+}
+.email-line > *,
+.phone-line > * {
+  display: inline-block;
+}
+
+.blob-email-content,
+.blob-phone-content {
+  font-weight: 300;
+}
+
+.info-container {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.label {
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.content-col,
+.label-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.content {
+  font-size: 20px;
+  font-weight: 300;
+}
+.fadeable {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  will-change: opacity, visibility;
+}
+
+.fadeable.visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
+
+@media only screen and (max-width: 40em) {
+  #contact-section-blobs {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 75vh;
+  }
+
+  #contact-section-header-text {
+    font-size: 38px;
+  }
+
+  .blob-header {
+    font-size: 26px;
+    margin: 0;
+  }
+
+  .blob-subheader {
+    font-size: 24px;
+    margin: 0;
+  }
+
+  .label {
+    font-size: 12px;
+    margin: 0;
+  }
+
+  .content {
+    font-size: 12px;
+  }
+
+  .contact-blob {
+    /*
+    height: 420px;
+    width: 420px;
+    */
+    height: 35vh;
+    width: 35vh;
+  }
+} /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .contact-blob {
+    height: 28vh;
+    width: 28vh;
+  }
+  .blob-header {
+    font-size: 40px;
+    margin: 0;
+    margin-bottom: 5%;
+  }
+
+  .blob-subheader {
+    font-size: 32px;
+    margin: 0;
+  }
+
+  .label {
+    font-size: 20px;
+    margin: 0;
+  }
+
+  .content {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+
+  #contact-section-header-text {
+    font-size: 52px;
+  }
+  .label {
+    font-size: 20px;
+  }
+
+  .blob-header {
+    font-size: 38px;
+    margin-bottom: 5%;
+  }
+
+  .blob-subheader {
+    font-size: 32px;
+    margin-top: 0;
+  }
+}

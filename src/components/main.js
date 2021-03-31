@@ -8,19 +8,34 @@ import TeamSection from "./team-section/team-section.js";
 import CurriculumSection from "./curriculum-section/curriculum";
 import MissionStatementSection from "./mission-statement-section/mission-statement-section";
 import SessionsSection from "./sessions-section/sessions-section";
+import ScheduleSection from "./schedule-section/schedule";
+import SignupSection from "./signup-section/signup-section";
+import ContactSection from "./contact-section/contact";
+
+import LanguageContext from "./../contexts/LanguageContext";
 
 class MainPage extends React.Component {
   render() {
-    console.log("Page up and running");
+    let lang = "english";
 
     return (
-      <div id="wrapper">
-        <Header />
-        <TeamSection />
-        <CurriculumSection />
-        <MissionStatementSection />
-        <SessionsSection />
-      </div>
+      <html>
+        <head></head>
+        <body>
+          <div id="wrapper">
+            <LanguageContext.Provider value={lang}>
+              <Header />
+              <TeamSection />
+              <CurriculumSection />
+              <MissionStatementSection />
+              <SessionsSection />
+              <ScheduleSection />
+              <SignupSection />
+              <ContactSection />
+            </LanguageContext.Provider>
+          </div>
+        </body>
+      </html>
     );
   }
 }

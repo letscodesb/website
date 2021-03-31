@@ -1,0 +1,57 @@
+#schedule-section {
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  background: #f9f9f9;
+  padding: 20px;
+  border: 1px solid #ddd5d5;
+  box-sizing: border-box;
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.35);
+  border-radius: 25px;
+
+  margin-bottom: 15vh;
+}
+
+#schedule-section-header-text {
+  font-family: "Roboto Mono";
+}
+
+.fadeable {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  will-change: opacity, visibility;
+}
+
+.fadeable.visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
+
+@media only screen and (max-width: 40em),
+  only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  #schedule-section {
+    width: 85%;
+  }
+
+  #schedule-section-header-text {
+    font-size: 24px;
+    margin-bottom: 20%;
+  }
+} /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+#schedule-section {
+  width: 70%;
+}
+
+#schedule-section-header-text {
+  font-size: 32px;
+  margin-bottom: 10%;
+}
+}

@@ -1,29 +1,81 @@
 .session-circle {
-  height: 320px;
-  width: 320px;
+  margin: 0;
+  height: 20vw;
+  width: 20vw;
   background: linear-gradient(105.06deg, #ffc071 4.03%, #ff8d4b 107.3%);
   box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.25);
   border-radius: 360px;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   flex-direction: column;
   color: white;
 }
 
-
 .session-circle-content-wrapper {
-    padding-top: 10%;
+  padding-top: 10%;
 }
 
 .session-circle-header {
-    font-weight: 900;
-    font-size: 40px;
+  font-weight: 900;
+  font-size: 40px;
 }
 
 .session-circle-desc {
-    font-size: 24px;
-    font-weight: 300;
-    transform: translateY(80%)
+  font-size: 24px;
+  font-weight: 300;
+  transform: translateY(80%);
+}
+
+.big-circle {
+  height: 23vw;
+  width: 23vw;
+  margin-top: -3%;
+}
+
+@media only screen and (max-width: 40em) {
+  .session-circle {
+    height: 50vw;
+    width: 50vw;
+  }
+
+  .big-circle {
+    height: 60vw;
+    width: 60vw;
+  }
+  .session-circle-header {
+    font-size: 2em;
+  }
+  .session-circle-desc {
+    margin-top: -3vh;
+    font-size: 1.3em;
+  }
+} /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .session-circle {
+    height: 20vh;
+    width: 20vh;
+  }
+
+  .big-circle {
+    height: 25vh;
+    width: 25vh;
+    margin-top: -8%;
+    font-size: 1.55em;
+  }
+
+  .session-circle-header {
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .session-circle-header {
+    font-size: 1.7em;
+  }
+  .session-circle-desc {
+    font-size: 1.3em;
+  }
 }

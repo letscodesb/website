@@ -2,10 +2,31 @@ import React, { Component } from "react";
 import "./curriculum.css";
 import "../../fonts.css";
 
+import VisibilitySensor from "react-visibility-sensor";
+
 class CurriculumSection extends Component {
+  constructor(props) {
+    super(props);
+    this.domRef = React.createRef();
+
+    this.state = {
+      visibility: false,
+    };
+  }
+
+  componentDidMount() {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) =>
+        this.setState({ visibility: entry.isIntersecting })
+      );
+    });
+    observer.observe(this.domRef.current);
+  }
+
   render() {
+    console.log(this.state.visibility)
     return (
-      <div id="curriculum-section">
+      <div id="curriculum-section" className={this.state.visibility ? 'fadeable visible' : 'fadeable hidden'} ref={this.domRef}>
         <h2 id="curriculum-section-header">Curriculum</h2>
 
         <div id="list-section">
@@ -13,7 +34,7 @@ class CurriculumSection extends Component {
             <li>Variables</li>
             <li>Loops</li>
             <li>Object Oriented Programming</li>
-            <li>Packages</li>
+            <li>Python Packages</li>
           </ul>
           <ul id="curriculum-list-2" class="curriculum-list">
             <li>Functions</li>

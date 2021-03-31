@@ -1,14 +1,29 @@
 body {
-    overflow-x: hidden;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+#menuToggleBackground {
+  position: fixed;
+  display: block;
+  background-color: #e6e8eb;
+  border-radius: 360px;
+  z-index: 2;
+  top: 35px;
+  left: 40px;
+  height: 50px;
+  width: 50px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+  user-select: none;
 }
 
 #menuToggle {
   display: block;
-  position: relative;
+  position: fixed;
   top: 50px;
   left: 50px;
 
-  z-index: 1;
+  z-index: 2;
 
   -webkit-user-select: none;
   user-select: none;
@@ -59,7 +74,7 @@ body {
   transform-origin: 4px 0px;
 
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
-    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.3s ease;
 }
 
 #menuToggle span:first-child {
@@ -100,6 +115,7 @@ body {
   * at the top left of the screen
   */
 #menu {
+  border-bottom-right-radius: 50px;
   position: absolute;
   width: 300px;
   margin: -100px 0 0 -50px;
@@ -114,7 +130,7 @@ body {
   transform-origin: 0% 0%;
   transform: translate(-100%, 0);
 
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: transform 0.3s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
 
 #menu li {
@@ -128,3 +144,28 @@ body {
 #menuToggle input:checked ~ ul {
   transform: none;
 }
+
+@media only screen and (max-width: 40em) {
+  #menuToggle {
+    top: 20px;
+    left: 20px;
+  }
+
+  #menuToggleBackground {
+    top: 5px;
+    left: 10px;
+  }
+  #menu {
+    width: 40vw;
+    height: 5vh;
+  }
+
+  #menuToggle input:checked ~ ul {
+    transform: none;
+    margin-top: -50px;
+  }
+
+  #menuToggle input:checked ~ ul > a > li {
+    transform: translateY(-100px);
+  }
+} /* max-width 640px, mobile-only styles, use when QAing mobile issues */

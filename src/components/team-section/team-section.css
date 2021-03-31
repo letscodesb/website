@@ -1,11 +1,14 @@
 #team-section {
-    margin-top: 4%;
+  margin-top: 4%;
+  height: 30%;
+  overflow-y: hidden;
+  margin-bottom: 10vh;
 }
 
 #team-header-text {
-padding-bottom: 1%;
-font-family: 'Roboto Mono';
-font-size: 38px;
+  padding-bottom: 1%;
+  font-family: "Roboto Mono";
+  font-size: 38px;
 }
 
 #team-card-row {
@@ -20,4 +23,17 @@ font-size: 38px;
 
 #team-card-row::-webkit-scrollbar {
   display: none;
+}
+
+.fadeable {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  will-change: opacity, visibility;
+}
+
+.fadeable.visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
 }
