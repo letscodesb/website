@@ -80,6 +80,7 @@ export default class SignupSection extends Component {
               })
               .then(
                 (result) => {
+                  alert("Enrollment complete!")
                   this.resetForm();
                 },
                 (error) => {
