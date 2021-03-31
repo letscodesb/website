@@ -124,7 +124,7 @@ export default class SignupSection extends Component {
     observer.observe(this.domRef.current);
   }
 
-  handleInputFocus(event) {
+  handleInputFocus(e) {
     e.preventDefault();
     e.target.focus({ preventScroll: true });
   }
