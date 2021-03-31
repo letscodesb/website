@@ -129,8 +129,7 @@ export default class SignupSection extends Component {
     this.setState({ visibility: true });
   }
 
-  handleInputBlur($) {
-  }
+  handleInputBlur($) {}
 
   render() {
     return (
@@ -160,6 +159,7 @@ export default class SignupSection extends Component {
               ref={this.inputElement}
               focus={this.handleInputFocus}
               blur={this.handleInputBlur}
+              autofocus="false"
             ></input>
             <input
               name="studentLastName"
@@ -171,6 +171,7 @@ export default class SignupSection extends Component {
               ref={this.inputElement}
               focus={this.handleInputFocus}
               blur={this.handleInputBlur}
+              autofocus="false"
             ></input>
           </div>
 
@@ -185,6 +186,7 @@ export default class SignupSection extends Component {
               ref={this.inputElement}
               focus={this.handleInputFocus}
               blur={this.handleInputBlur}
+              autofocus="false"
             ></input>
             <input
               name="parentEmail"
@@ -196,6 +198,7 @@ export default class SignupSection extends Component {
               ref={this.inputElement}
               focus={this.handleInputFocus}
               blur={this.handleInputBlur}
+              autofocus="false"
             ></input>
           </div>
 
@@ -210,6 +213,7 @@ export default class SignupSection extends Component {
               ref={this.inputElement}
               focus={this.handleInputFocus}
               blur={this.handleInputBlur}
+              autofocus="false"
             ></input>
             <input
               name="studentEmail"
@@ -221,6 +225,7 @@ export default class SignupSection extends Component {
               ref={this.inputElement}
               focus={this.handleInputFocus}
               blur={this.handleInputBlur}
+              autofocus="false"
             ></input>
           </div>
           <div class="form-input-line option-line" id="first-select-line">
@@ -231,6 +236,7 @@ export default class SignupSection extends Component {
               placeholder="Session"
               onChange={this.handleChange}
               value={this.state.session}
+              autofocus="false"
             >
               <option value="" disabled>
                 Session
