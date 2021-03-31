@@ -28,7 +28,7 @@ export default class SignupSection extends Component {
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.resetForm = this.resetForm.bind(this);
-    this.president_email = "devon.s.schwartz@gmail.com"; 
+    this.president_email = "devon.s.schwartz@gmail.com";
   }
 
   handleChange(event) {
@@ -80,7 +80,7 @@ export default class SignupSection extends Component {
               })
               .then(
                 (result) => {
-                  alert("Enrollment complete!")
+                  alert("Enrollment complete!");
                   this.resetForm();
                 },
                 (error) => {
@@ -119,11 +119,23 @@ export default class SignupSection extends Component {
       );
     });
     observer.observe(this.domRef.current);
+
+    var viewport = document.querySelector("meta[name=viewport]");
+    viewport.setAttribute(
+      "content",
+      viewport.content + ", height=" + window.innerHeight
+    );
   }
 
   render() {
     return (
-      <div id="signup-section" ref={this.domRef} className={this.state.visibility ? 'fadeable visible' : 'fadeable hidden'}>
+      <div
+        id="signup-section"
+        ref={this.domRef}
+        className={
+          this.state.visibility ? "fadeable visible" : "fadeable hidden"
+        }
+      >
         <div id="signup-section-header">
           <h1 id="signup-section-header-text">Enroll</h1>
           <h2 id="signup-section-header-subheader">
