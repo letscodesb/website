@@ -26,6 +26,8 @@ export default class SignupSection extends Component {
     this.domRef = React.createRef();
     this.inputElement = React.createRef();
 
+    this.handleInputFocus = this.handleInputFocus.bind(this);
+    this.handleInputBlur = this.handleInputBlur.bind(this);
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.resetForm = this.resetForm.bind(this);
@@ -120,11 +122,14 @@ export default class SignupSection extends Component {
       );
     });
     observer.observe(this.domRef.current);
+  }
 
-    this.inputElement.current.onfocus = () => {
-      window.scrollTo(0, 0);
-      document.body.scrollTop = 0;
-    };
+  handleInputFocus($) {
+    $.fn.fullpage.setAutoScrolling(false);
+  }
+
+  handleInputBlur($) {
+    $.fn.fullpage.setAutoScrolling(true);
   }
 
   render() {
@@ -152,6 +157,9 @@ export default class SignupSection extends Component {
               placeholder="Student First Name"
               onChange={this.handleChange}
               value={this.state.studentFirstName}
+              ref={this.inputElement}
+              focus={this.handleInputFocus}
+              blur={this.handleInputBlur}
             ></input>
             <input
               name="studentLastName"
@@ -160,6 +168,9 @@ export default class SignupSection extends Component {
               placeholder="Student Last Name"
               onChange={this.handleChange}
               value={this.state.studentLastName}
+              ref={this.inputElement}
+              focus={this.handleInputFocus}
+              blur={this.handleInputBlur}
             ></input>
           </div>
 
@@ -172,6 +183,8 @@ export default class SignupSection extends Component {
               onChange={this.handleChange}
               value={this.state.parentPhone}
               ref={this.inputElement}
+              focus={this.handleInputFocus}
+              blur={this.handleInputBlur}
             ></input>
             <input
               name="parentEmail"
@@ -181,6 +194,8 @@ export default class SignupSection extends Component {
               onChange={this.handleChange}
               value={this.state.parentEmail}
               ref={this.inputElement}
+              focus={this.handleInputFocus}
+              blur={this.handleInputBlur}
             ></input>
           </div>
 
@@ -193,6 +208,8 @@ export default class SignupSection extends Component {
               onChange={this.handleChange}
               value={this.state.studentPhone}
               ref={this.inputElement}
+              focus={this.handleInputFocus}
+              blur={this.handleInputBlur}
             ></input>
             <input
               name="studentEmail"
@@ -202,6 +219,8 @@ export default class SignupSection extends Component {
               onChange={this.handleChange}
               value={this.state.studentEmail}
               ref={this.inputElement}
+              focus={this.handleInputFocus}
+              blur={this.handleInputBlur}
             ></input>
           </div>
           <div class="form-input-line option-line" id="first-select-line">
