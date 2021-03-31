@@ -24,6 +24,7 @@ export default class SignupSection extends Component {
     };
 
     this.domRef = React.createRef();
+    this.inputElement = React.createRef();
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -120,11 +121,10 @@ export default class SignupSection extends Component {
     });
     observer.observe(this.domRef.current);
 
-    var viewport = document.querySelector("meta[name=viewport]");
-    viewport.setAttribute(
-      "content",
-      viewport.content + ", height=" + window.innerHeight
-    );
+    this.inputElement.current.onfocus = () => {
+      window.scrollTo(0, 0);
+      document.body.scrollTop = 0;
+    };
   }
 
   render() {
@@ -171,6 +171,7 @@ export default class SignupSection extends Component {
               placeholder="Parent Phone Number"
               onChange={this.handleChange}
               value={this.state.parentPhone}
+              ref={this.inputElement}
             ></input>
             <input
               name="parentEmail"
@@ -179,6 +180,7 @@ export default class SignupSection extends Component {
               placeholder="Parent Email"
               onChange={this.handleChange}
               value={this.state.parentEmail}
+              ref={this.inputElement}
             ></input>
           </div>
 
@@ -190,6 +192,7 @@ export default class SignupSection extends Component {
               placeholder="Student Phone (Optional)"
               onChange={this.handleChange}
               value={this.state.studentPhone}
+              ref={this.inputElement}
             ></input>
             <input
               name="studentEmail"
@@ -198,6 +201,7 @@ export default class SignupSection extends Component {
               placeholder="Student Email (Optional)"
               onChange={this.handleChange}
               value={this.state.studentEmail}
+              ref={this.inputElement}
             ></input>
           </div>
           <div class="form-input-line option-line" id="first-select-line">
