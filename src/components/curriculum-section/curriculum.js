@@ -2,8 +2,6 @@ import React, { Component } from "react";
 import "./curriculum.css";
 import "../../fonts.css";
 
-import VisibilitySensor from "react-visibility-sensor";
-
 class CurriculumSection extends Component {
   constructor(props) {
     super(props);
