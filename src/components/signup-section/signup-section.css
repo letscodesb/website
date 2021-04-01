@@ -166,8 +166,8 @@ select {
     color: black;
   }
 
-  .form-input {
-    font-size: 10px;
+  .form-input, .form-input::placeholder {
+    font-size: 16px;
   }
 
   .option-line:last-child > select {
@@ -190,7 +190,7 @@ select {
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   .form-input,
   .form-input::placeholder {
-    font-size: 12px;
+    font-size: 16px;
   }
 
   #submit-button {
