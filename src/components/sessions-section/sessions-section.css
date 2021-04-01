@@ -29,5 +29,6 @@
     align-items: center;
     height: 110vh;
   }
+
 } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 

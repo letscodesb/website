@@ -28,7 +28,7 @@ class TeamSection extends Component {
       {
         name: "Neil Aylor",
         title: "Vice President and Lab Leader",
-        bio: "Neil Aylor is a rising senior at Stratford High School. He plans to persue artifical intelligence and data science and has been programming for 6 years. He teaches code to elementary and middle schoolers at CodeNinjas with Devon, and is involved in theater and the debate team as well as being president of both Statford's Computer Science Club and Chess Club. He also wrote all the code for the website you're reading this on!",
+        bio: "Neil Aylor is a rising senior at Stratford High School. He plans to persue artifical intelligence and data science and has been programming for 6 years. He teaches code to elementary and middle schoolers at CodeNinjas with Devon, and is involved in theater and the debate team as well as being president of both Statford's Computer Science Club and Chess Club. He also wrote all the code for the website you're reading this on in pure React JS!",
         img: neilImage,
       },
       {
