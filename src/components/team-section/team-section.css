@@ -37,3 +37,18 @@
   transform: none;
   visibility: visible;
 }
+
+#team-content-row{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#scroll-button-row {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+}

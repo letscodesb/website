@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import TeamCard from "./card";
+import ScrollButton from "./scroll-button";
 
 import "./team-section.css";
 
@@ -9,7 +10,6 @@ const jeanImage = require("./../../resources/team-pictures/jean.jpg");
 const josephImage = require("./../../resources/team-pictures/joseph.jpg");
 const neilImage = require("./../../resources/team-pictures/neil.jpg");
 const seanImage = require("./../../resources/team-pictures/sean.jpg");
-
 
 const noImage = require("./../../resources/team-pictures/lightGray.png");
 
@@ -28,7 +28,8 @@ class TeamSection extends Component {
       {
         name: "Neil Aylor",
         title: "Vice President and Lab Leader",
-        bio: "Neil Aylor is a rising senior at Stratford High School. He plans to persue artifical intelligence and data science and has been programming for 6 years. He teaches code to elementary and middle schoolers at CodeNinjas with Devon, and is involved in theater and the debate team as well as being president of both Statford's Computer Science Club and Chess Club. He also wrote all the code for the website you're reading this on!",
+        bio:
+          "Neil Aylor is a rising senior at Stratford High School. He plans to persue artifical intelligence and data science and has been programming for 6 years. He teaches code to elementary and middle schoolers at CodeNinjas with Devon, and is involved in theater and the debate team as well as being president of both Statford's Computer Science Club and Chess Club. He also wrote all the code for the website you're reading this on!",
         img: neilImage,
       },
       {
@@ -198,8 +199,20 @@ class TeamSection extends Component {
       >
         <h1 id="team-header-text">Our Team</h1>
 
-        <div id="team-card-row" ref={this.teamCardRowRef}>
-          {cards}
+        <div id="team-content-row">
+          <div id="scroll-button-row">
+            <ScrollButton
+              leftDirection={true}
+              slider={this.teamCardRowRef.current}
+            />
+            <ScrollButton
+              rightDirection={true}
+              slider={this.teamCardRowRef.current}
+            />
+          </div>
+          <div id="team-card-row" ref={this.teamCardRowRef}>
+            {cards}
+          </div>
         </div>
       </div>
     );
