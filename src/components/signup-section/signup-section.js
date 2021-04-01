@@ -122,6 +122,20 @@ export default class SignupSection extends Component {
       );
     });
     observer.observe(this.domRef.current);
+
+    try{
+    window.addEventListener("resize", function(){
+      if(document.activeElement.tagName=="INPUT"){
+         window.setTimeout(function(){
+            document.activeElement.scrollIntoViewIfNeeded();
+         },0);
+      }
+   })
+  }catch(e){
+    console.log(e);
+    console.log("^^^^ event listener")
+  }
+
   }
 
   handleInputFocus(e) {
