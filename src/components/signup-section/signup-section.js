@@ -122,20 +122,6 @@ export default class SignupSection extends Component {
       );
     });
     observer.observe(this.domRef.current);
-
-    try{
-    window.addEventListener("resize", function(){
-      if(document.activeElement.tagName=="INPUT"){
-         window.setTimeout(function(){
-            document.activeElement.scrollIntoViewIfNeeded();
-         },0);
-      }
-   })
-  }catch(e){
-    console.log(e);
-    console.log("^^^^ event listener")
-  }
-
   }
 
   handleInputFocus(e) {
@@ -154,6 +140,11 @@ export default class SignupSection extends Component {
           this.state.visibility ? "fadeable visible" : "fadeable hidden"
         }
       >
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"
+        />
+
         <div id="signup-section-header">
           <h1 id="signup-section-header-text">Enroll</h1>
           <h2 id="signup-section-header-subheader">
@@ -187,7 +178,6 @@ export default class SignupSection extends Component {
               blur={this.handleInputBlur}
               autofocus="false"
               autoScrolling={false}
-
             ></input>
           </div>
 
@@ -204,7 +194,6 @@ export default class SignupSection extends Component {
               blur={this.handleInputBlur}
               autofocus="false"
               autoScrolling={false}
-
             ></input>
             <input
               name="parentEmail"
@@ -218,7 +207,6 @@ export default class SignupSection extends Component {
               blur={this.handleInputBlur}
               autofocus="false"
               autoScrolling={false}
-
             ></input>
           </div>
 
@@ -235,7 +223,6 @@ export default class SignupSection extends Component {
               blur={this.handleInputBlur}
               autofocus="false"
               autoScrolling={false}
-
             ></input>
             <input
               name="studentEmail"
@@ -249,7 +236,6 @@ export default class SignupSection extends Component {
               blur={this.handleInputBlur}
               autofocus="false"
               autoScrolling={false}
-
             ></input>
           </div>
           <div class="form-input-line option-line" id="first-select-line">
