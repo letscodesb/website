@@ -22,7 +22,6 @@ class CurriculumSection extends Component {
   }
 
   render() {
-    console.log(this.state.visibility)
     return (
       <div id="curriculum-section" className={this.state.visibility ? 'fadeable visible' : 'fadeable hidden'} ref={this.domRef}>
         <h2 id="curriculum-section-header">Curriculum</h2>

@@ -25,7 +25,6 @@ class SessionCircle extends Component {
       classString += ' big-circle';
     }
 
-    console.log(classString)
     return (
       <div className={classString} >
         <div className="session-circle-content-wrapper">

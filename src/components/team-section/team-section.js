@@ -110,7 +110,7 @@ class TeamSection extends Component {
         name: "Jerome Conkright",
         title: "Lab Leader",
         bio:
-          "Jerome Conkright is a rising freshman in college planning to major in computer science. He has been programming for 4 years, and outside of school and program, he enjoys his debate team and boxing.",
+          "Jerome Conkright is a rising freshman in college planning to major in computer science. He has been programming for 4 years, and outside of school and programming, he enjoys the SHS debate team and boxing.",
         img: noImage,
       },
     ];
@@ -146,7 +146,6 @@ class TeamSection extends Component {
       const x = e.pageX - slider.offsetLeft;
       const walk = (x - startX) * 1; //scroll-fast
       slider.scrollLeft = scrollLeft - walk;
-      console.log(walk);
     });
 
     const observer = new IntersectionObserver((entries) => {
