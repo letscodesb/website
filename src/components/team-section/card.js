@@ -26,7 +26,7 @@ class TeamCard extends Component {
                     <h2 className='team-card-title'>{this.props.title}</h2>
                 </div>
 
-                <div>
+                <div className='team-card-bio-section'>
                     <p className='team-card-bio' className={bioClass}>{this.props.bio}</p>
                 </div>
 

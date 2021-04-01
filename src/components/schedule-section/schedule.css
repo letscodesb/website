@@ -41,17 +41,20 @@
   }
 } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  #schedule-section {
+    width: 70%;
+  }
 
-@media only screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px)
-and (orientation : portrait) {
-#schedule-section {
-  width: 70%;
+  #schedule-section-header-text {
+    font-size: 32px;
+    margin-bottom: 10%;
+  }
 }
 
-#schedule-section-header-text {
-  font-size: 32px;
-  margin-bottom: 10%;
-}
+@media only screen and (min-width: 1224px) and (max-height: 1000px) {
+  #schedule-section {
+    width: 40vw;
+    height: 90%;
+  }
 }
