@@ -8,6 +8,9 @@ const annieImage = require("./../../resources/team-pictures/annie.jpeg");
 const jeanImage = require("./../../resources/team-pictures/jean.jpg");
 const josephImage = require("./../../resources/team-pictures/joseph.jpg");
 const neilImage = require("./../../resources/team-pictures/neil.jpg");
+const seanImage = require("./../../resources/team-pictures/sean.jpg");
+
+
 const noImage = require("./../../resources/team-pictures/lightGray.png");
 
 class TeamSection extends Component {
@@ -104,7 +107,7 @@ class TeamSection extends Component {
         title: "Lab Leader",
         bio:
           "Sean McReynolds is a rising senior at Stratford High School. Sean has been programming throughout high school and particularly likes coding mods for video games. He wants to pursue a career in STEM. Outside of programming and school, Sean likes cycling and band.",
-        img: noImage,
+        img: seanImage,
       },
       {
         name: "Jerome Conkright",
