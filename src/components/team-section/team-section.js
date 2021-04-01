@@ -44,7 +44,7 @@ class TeamSection extends Component {
         img: noImage,
       },
       {
-        name: "Joseph Bulduc",
+        name: "Joseph Bolduc",
         title: "Lab Leader",
         bio:
           "Joseph Buldoc is a rising senior at Stratford High School. He plans to pursue Computer Science and Engineering when he enters college and has been programming for 4 years. Outside of programming and school, Joseph enjoys creating deepfakes, 3D printing, and playing chess.",
