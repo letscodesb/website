@@ -124,10 +124,7 @@ export default class SignupSection extends Component {
     observer.observe(this.domRef.current);
   }
 
-  handleInputFocus(e) {
-    e.preventDefault();
-    e.currentTarget.select();
-  }
+  handleInputFocus(e) {}
 
   handleInputBlur($) {}
 
@@ -140,11 +137,6 @@ export default class SignupSection extends Component {
           this.state.visibility ? "fadeable visible" : "fadeable hidden"
         }
       >
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"
-        />
-
         <div id="signup-section-header">
           <h1 id="signup-section-header-text">Enroll</h1>
           <h2 id="signup-section-header-subheader">
