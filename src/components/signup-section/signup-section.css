@@ -94,7 +94,7 @@ select {
 }
 
 #button-section {
-  height: 50px;
+  height: 1px;
 
   display: flex;
   flex-direction: row-reverse;
@@ -181,16 +181,16 @@ select {
   }
 
   #submit-button {
-    margin: 0;
-    margin-right: -3%;
+    
     height: 15vh;
     width: 40%;
+    margin-top: 5%;
   }
 } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   #signup-section {
-    height: 70vh;
+    height: 50vh;
   }
   .form-input,
   .form-input::placeholder {
@@ -200,8 +200,7 @@ select {
   #submit-button {
     width: 12vh;
     height: 12vh;
-    margin: 0;
-    padding: 0;
+    margin-top: -6%;
   }
 }
 
