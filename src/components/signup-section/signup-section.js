@@ -159,6 +159,7 @@ export default class SignupSection extends Component {
               ref={this.inputElement}
               onFocus={this.handleInputFocus}
               blur={this.handleInputBlur}
+              autoScrolling={false}
             ></input>
             <input
               name="studentLastName"
@@ -171,6 +172,8 @@ export default class SignupSection extends Component {
               onFocus={this.handleInputFocus}
               blur={this.handleInputBlur}
               autofocus="false"
+              autoScrolling={false}
+
             ></input>
           </div>
 
@@ -186,6 +189,8 @@ export default class SignupSection extends Component {
               onFocus={this.handleInputFocus}
               blur={this.handleInputBlur}
               autofocus="false"
+              autoScrolling={false}
+
             ></input>
             <input
               name="parentEmail"
@@ -198,6 +203,8 @@ export default class SignupSection extends Component {
               onFocus={this.handleInputFocus}
               blur={this.handleInputBlur}
               autofocus="false"
+              autoScrolling={false}
+
             ></input>
           </div>
 
@@ -213,6 +220,8 @@ export default class SignupSection extends Component {
               onFocus={this.handleInputFocus}
               blur={this.handleInputBlur}
               autofocus="false"
+              autoScrolling={false}
+
             ></input>
             <input
               name="studentEmail"
@@ -225,6 +234,8 @@ export default class SignupSection extends Component {
               onFocus={this.handleInputFocus}
               blur={this.handleInputBlur}
               autofocus="false"
+              autoScrolling={false}
+
             ></input>
           </div>
           <div class="form-input-line option-line" id="first-select-line">
