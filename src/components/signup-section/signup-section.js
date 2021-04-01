@@ -125,12 +125,9 @@ export default class SignupSection extends Component {
   }
 
   handleInputFocus(e) {
-    //e.preventDefault();
-    //e.target.focus({ preventScroll: true });
-
-    var x = window.scrollX, y = window.scrollY;
-    e.target.focus();
-    window.scrollTo(x, y);
+    e.preventDefault();
+    e.stopPropagation();
+    e.currentTarget.focus({ preventScroll: true });
   }
 
   handleInputBlur($) {}
