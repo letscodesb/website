@@ -123,9 +123,16 @@ body {
   width: 90%;
   text-align: center;
   height: 125%;
-  border:none;
-  border-radius:30px;
+  border: none;
+  border-radius: 30px;
   font-size: 0.9em;
+  text-align: center;
+  text-align-last: center;
+  background-color:white;
+}
+
+option {
+  text-align: center;
 }
 #menu {
   border-bottom-right-radius: 50px;
