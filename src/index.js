@@ -5,6 +5,8 @@ import './index.css';
 import MainPage from './components/main.js';
 import reportWebVitals from './reportWebVitals';
 
+import './i18n';
+
 ReactDOM.render(
   <React.StrictMode>
     <MainPage  />

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { withTranslation } from "react-i18next";
 import "./hamburger.css";
 import LanguageContext from "./../../contexts/LanguageContext";
 
@@ -8,6 +9,7 @@ class HamburgerMenu extends Component {
   constructor(props) {
     super(props);
     this.toggleLanguage = this.toggleLanguage.bind(this);
+    this.handleLanguageChange = this.handleLanguageChange.bind(this);
   }
 
   toggleLanguage() {
@@ -18,7 +20,13 @@ class HamburgerMenu extends Component {
     }
   }
 
+  handleLanguageChange(e) {
+    let newLang = e.target.value;
+    this.props.i18n.changeLanguage(newLang);
+  }
+
   render() {
+    const t = this.props.t;
     return (
       <nav role="navigation">
         <div id="menuToggleBackground">
@@ -30,18 +38,24 @@ class HamburgerMenu extends Component {
             <span></span>
 
             <ul id="menu">
-              <a href="#header-section">
-                <li>Home</li>
-              </a>
-              <a href="#curriculum-section">
-                <li>Curriculum</li>
-              </a>
-              <a href="#signup-section">
-                <li>Enroll</li>
-              </a>
-              <a href="#contact-section">
-                <li>Contact</li>
-              </a>
+              <li>
+                <a href="#header-section">{t("hamburger-home")}</a>
+              </li>
+              <li>
+                <a href="#curriculum-section">{t("hamburger-curriculum")}</a>
+              </li>
+              <li>
+                <a href="#signup-section">{t("hamburger-enroll")}</a>
+              </li>
+              <li>
+                <a href="#contact-section">{t("hamburger-contact")}</a>
+              </li>
+              <li>
+                <select id="languageMenu" onChange={this.handleLanguageChange}>
+                  <option value="en">English</option>
+                  <option value="es">Español</option>
+                </select>
+              </li>
             </ul>
           </div>
         </div>
@@ -50,4 +64,4 @@ class HamburgerMenu extends Component {
   }
 }
 
-export default HamburgerMenu;
+export default withTranslation()(HamburgerMenu);

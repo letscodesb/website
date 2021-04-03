@@ -75,11 +75,6 @@
   justify-content: space-around;
 }
 
-.label {
-  font-weight: normal;
-  margin-top: 0;
-  margin-bottom: 0;
-}
 
 .content-col,
 .label-col {
@@ -87,10 +82,27 @@
   flex-direction: column;
   justify-content: space-around;
 }
+
+.content-col {
+  align-items: justify;
+}
+
+.label-col {
+  align-items: justify;
+}
 .content {
   font-size: 20px;
   font-weight: 300;
 }
+
+.label {
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 21px;
+}
+
+
 .fadeable {
   opacity: 0;
   visibility: hidden;
@@ -140,8 +152,9 @@
     height: 420px;
     width: 420px;
     */
-    height: 35vh;
-    width: 35vh;
+    height: 90vw;
+    width: 85vw;
+    margin-top:10%;
   }
 } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 
@@ -162,7 +175,7 @@
   }
 
   .label {
-    font-size: 20px;
+    font-size: 18px;
     margin: 0;
   }
 
@@ -172,7 +185,6 @@
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-
   #contact-section-header-text {
     font-size: 52px;
   }
@@ -191,14 +203,13 @@
   }
 }
 
-
 @media only screen and (min-width: 1224px) and (max-height: 1000px) {
   .blob-header {
-    font-size : 36px;
+    font-size: 36px;
   }
 
   .blob-subheader {
-    font-size : 32px;
+    font-size: 32px;
   }
   .label {
     font-size: 18px;

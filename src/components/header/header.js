@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { withTranslation } from "react-i18next";
+
 import "./header.css";
 
 import HamburgerMenu from "./hamburger.js";
@@ -23,6 +25,7 @@ class Header extends Component {
   }
 
   render() {
+    const t = this.props.t;
     return (
       <div id="header-section">
         <div
@@ -38,17 +41,10 @@ class Header extends Component {
             this.state.visibility ? "fadeable visible" : "fadeable hidden"
           }
         >
-          <p id="camp-description-text" ref={this.domRef}>
-            Let’s Code SBISD is a free week-long virtual coding camp during the
-            summer for all SBISD middle schoolers. The course is taught in the
-            Python programming language and no prior coding
-            experience is needed. There are 3 sessions to choose from, and each
-            student will have a very personalized experience with their
-            instructor.
-          </p>
+          <p id="camp-description-text" ref={this.domRef}>{t('header-description')}</p>
         </div>
       </div>
     );
   }
 }
-export default Header;
+export default withTranslation()(Header);

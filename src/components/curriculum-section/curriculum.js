@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import {withTranslation} from "react-i18next";
 import "./curriculum.css";
 import "../../fonts.css";
 
@@ -22,22 +23,23 @@ class CurriculumSection extends Component {
   }
 
   render() {
+    const t = this.props.t;
     return (
       <div id="curriculum-section" className={this.state.visibility ? 'fadeable visible' : 'fadeable hidden'} ref={this.domRef}>
-        <h2 id="curriculum-section-header">Curriculum</h2>
+        <h2 id="curriculum-section-header">{t('curriculum-header')}</h2>
 
         <div id="list-section">
           <ul id="curriculum-list-1" class="curriculum-list">
-            <li>Variables</li>
-            <li>Loops</li>
-            <li>Object Oriented Programming</li>
-            <li>Python Packages</li>
+            <li>{t('curriculum-variables')}</li>
+            <li>{t('curriculum-loops')}</li>
+            <li>{t('curriculum-oop')}</li>
+            <li>{t('curriculum-packages')}</li>
           </ul>
           <ul id="curriculum-list-2" class="curriculum-list">
-            <li>Functions</li>
-            <li>Lists</li>
-            <li>Algorithms</li>
-            <li>Final Project</li>
+            <li>{t('curriculum-functions')}</li>
+            <li>{t('curriculum-lists')}</li>
+            <li>{t('curriculum-algorithms')}</li>
+            <li>{t('curriculum-final-project')}</li>
           </ul>
         </div>
       </div>
@@ -45,4 +47,4 @@ class CurriculumSection extends Component {
   }
 }
 
-export default CurriculumSection;
+export default withTranslation()(CurriculumSection);

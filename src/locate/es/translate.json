@@ -1,0 +1,87 @@
+{
+    "header-description" : "Let's Code SBISD es un campamento de codificación virtual gratuito de una semana durante el verano para todos los estudiantes de secundaria de SBISD. El curso se imparte en el lenguaje de programación Python y no se necesita experiencia previa en codificación. Hay 3 sesiones para elegir, y cada alumno tendrá una experiencia muy personalizada con su instructor.",
+    "hamburger-home" : "Hogar",
+    "hamburger-curriculum" : "Plan de Estudios",
+    "hamburger-enroll" : "Inscribirse",
+    "hamburger-contact" : "Contacto",
+
+    "cards-header" : "Nuestro Equipo",
+
+    "cards-titles-president-and-lab-leader" : "Presidente y Líder de Laboratorio",
+    "cards-titles-vice-president-and-lab-leader" : "Vicepresidento y Líder de Laboratorio",
+    "cards-titles-head-of-communications-and-lab-leader" : "Jefa de Comunicaciones y Líder de Laboratorio",
+    "cards-titles-lab-leader" : "Líder de Laboratorio",
+    "cards-titles-office-hour-instructor" : "Instructor de Horas de Oficina",
+    "cards-titles-advertising-team" : "Equipo de Publicidad",
+    "cards-titles-advertising-team-and-lab-leader" : "Líder de Laboratorio y Equipo de Publicidad",
+
+    "cards-bios-devon" : "Devon Schwartz es un estudiante de último año en Stratford High School. Planea estudiar ciencias de la computación e inteligencia artificial cuando ingrese a la universidad y ha estado programando durante 3 años. Actualmente trabaja como instructor en Code Ninjas junto a Neil Aylor, donde enseña a los niños en la escuela primaria y secundaria cómo programar. Fuera de la programación y la escuela, es miembro del equipo de debate de Stratford y del teatro Stratford. También le encanta cocinar y andar en bicicleta.",
+    "cards-bios-neil" : "Neil Aylor es un estudiante de último año en Stratford High School. Planea perseguir inteligencia artificial y ciencia de datos y ha estado programando durante 6 años. Enseña código a estudiantes de primaria y secundaria en CodeNinjas con Devon, y está involucrado en teatro y el equipo de debate, además de ser presidente tanto del Club de Ciencias de la Computación de Stratford como del Club de Ajedrez. ¡También escribió todo el código para el sitio web en el que estás leyendo esto!",
+    "cards-bios-jean" : "Jean Hoang es un estudiante de tercer año en Stratford High School y el Spring Branch Academic Institute, un programa para estudiantes académicamente dotados. Ella planea estudiar ciencias de la computación e inteligencia artificial cuando ingrese a la universidad. Ha estado programando durante 7 años y ha desarrollado un sitio web para la práctica dental de sus padres, Dental Suite. Jean también trabajó con un campamento de verano AI4All organizado por la Universidad de Stanford, que se centró principalmente en la biología computacional. Fuera de la programación y la escuela, Jean practica artes marciales chinas. También le encanta leer, ver K-Dramas y anime, y escuchar K-Pop.",
+    "cards-bios-bryce" : "Bryce Elphingstone es un estudiante de primer año universitario en ascenso en Texas A&M, donde estudiará Ingeniería General. Ha estado programando durante 7 años y actualmente está trabajando en hacer un juego de ajedrez que funciona con inteligencia artificial que usa datos de jugadores en Internet. Fuera de la programación y la escuela, sus intereses incluyen la química y los videojuegos. También es miembro de la banda de Stratford High School.",
+    "cards-bios-joseph" : "Joseph Buldoc es un estudiante de último año en Stratford High School. Planea estudiar Ciencias de la Computación e Ingeniería cuando ingrese a la universidad y ha estado programando durante 4 años. Fuera de la programación y la escuela, Joseph disfruta creando deepfakes, impresión 3D y jugando al ajedrez.",
+    "cards-bios-william" : "William Wu es un estudiante de tercer año en Stratford High School. Planea seguir una carrera relacionada con STEM que involucre ciencias de la computación. Aunque William ha estado programando desde muy joven, comenzó a tomarse en serio la programación en sexto grado. Fuera de la escuela, William está interesado en la robótica, en la que compitió en el medio. También le interesa la biología marina y dibuja en su tiempo libre.",
+    "cards-bios-karina" : "Karina Hartman es una estudiante de último año en Stratford High School. Ella planea seguir una carrera en arte digital e informática. Lleva 5 años programando. Comenzó a programar para el equipo de robótica de su escuela secundaria y luego tomó 2 años de informática en la escuela secundaria. En su tiempo libre, a Karina le gusta dibujar y jugar videojuegos.",
+    "cards-bios-erik" : "Erik Rankin es un estudiante de tercer año en Stratford High School. Planea seguir una carrera relacionada con STEM. Ha estado programando durante 6 años, principalmente haciendo mods para Minecraft y Hearts of Iron 4. Fuera de la escuela y la programación, sus intereses incluyen jugar videojuegos y hacer películas.",
+    "cards-bios-aditya" : "Aditya Biradar es un estudiante universitario de primer año en ascenso en (A&M o UT) con especialización en ingeniería eléctrica e informática. Ha estado programando durante 2 años. Fuera de la escuela y la programación, le gusta jugar baloncesto. También es miembro del equipo de atletismo de Stratford High School.",
+    "cards-bios-caleb" : "Caleb Xu es un estudiante de tercer año en Stratford High School que planea seguir una carrera en ciencias de la computación y negocios. Ha estado programando durante 2 años. Sus principales proyectos relacionados con la realización de interfaces gráficas de usuario. Además, es miembro de Business Professionals of America, donde se destacó en Programación Java. En su tiempo libre, Caleb juega lacrosse y videojuegos.",
+    "cards-bios-annie" : "Annie Nguyen es una estudiante de último año en Spring Woods High School. Aunque no programa, tiene mucha experiencia en comunicación y sobresale en organización y planificación. En el tiempo libre de Annie, le gusta hacer música y beber boba.",
+    "cards-bios-jasmine" : "Jasmine Zeng es una estudiante de último año en Stratford High School. Jasmine ha estado programando durante 3 años y planea convertirse en abogada de justicia penal. Fuera de la programación y la escuela, le interesan los crímenes, las historias de misterio, los proyectos de bricolaje, la repostería, la fotografía y la lectura.",
+    "cards-bios-sean" : "Sean McReynolds es un estudiante de último año en Stratford High School. Sean ha estado programando durante toda la escuela secundaria y le gusta especialmente codificar mods para videojuegos. Quiere seguir una carrera en STEM. Fuera de la programación y la escuela, a Sean le gusta el ciclismo y la banda.",
+    "cards-bios-jerome" : "Jerome Conkright es un estudiante de primer año en la universidad que planea especializarse en ciencias de la computación. Ha estado programando durante 4 años, y fuera de la escuela y la programación, disfruta del equipo de debate de SHS y del boxeo.",
+
+    "curriculum-header" : "Plan de Estudios",
+    "curriculum-variables" : "Variables",
+    "curriculum-loops" : "Bucles",
+    "curriculum-oop" : "Programación Orientada a Objetos",
+    "curriculum-packages" : "Paquetes de Python",
+    "curriculum-functions" : "Funciones",
+    "curriculum-lists" : "Liza",
+    "curriculum-algorithms" : "Algoritmos",
+    "curriculum-final-project" : "Proyecto Final",
+
+
+    "mission-header" : "Nuestra Misión",
+    "mission-statement" : "Queríamos crear un campamento de codificación para SBISD que respetara la salud pública de todos los estudiantes y estableciera una comunidad de ciencias de la computación más sólida en el distrito. Creemos que la mejor manera de hacer esto es brindar la experiencia de un campamento de codificación premium sin costo alguno para los estudiantes desatendidos del distrito.",
+
+    "session-1":"Junio 7 - 11",
+    "session-1-desc":"Sesión 1",
+    "session-2":"Junio 21 - 25",
+    "session-2-desc":"Sesión 2",
+    "session-3":"Julio 5 - 9",
+    "session-3-desc":"Sesión 3",
+
+    "schedule-header" : "Horario del Campamento",
+    "lesson-one" : "Lección Uno",
+    "project-one" : "Proyecto Uno",
+    "lunch" : "Almuerzo",
+    "lesson-two" : "Leccion Dos",
+    "project-two" : "Proyecto Dos",
+    "day-ends" : "Termina el Día",
+    "office-hours-start" : "Inicio Horario de Oficina",
+    "office-hours-end" : "Fin Horario de Oficina",
+
+    "enroll-header":"Inscribirse",
+    "enroll-subheader":"Usted Recibirá un Email de Confirmación",
+    "enroll-student-first-name":"Nombre del Estudiante",
+    "enroll-student-last-name":"Último estudiante Nombre",
+    "enroll-parent-phone-number":"Teléfono de los Padres",
+    "enroll-parent-email":"Correo Electrónico de los Padres",
+    "enroll-student-phone":"Teléfono del Estudiante (Opcional)",
+    "enroll-student-email":"Correo Electrónico del Estudiante (Opcional)",
+    "session-header" : "Sesión",
+    "grade-header" : "Clase en Otoño de 2021",
+    "incoming-6":"Alumno Entrante del 6to Grado",
+    "incoming-7":"Alumno Entrante del 7mo Grado",
+    "incoming-8" : "Alumno Entrante del 8vo Grado",
+
+    "contact-us":"Contacta con Nosotros",
+    "president":"Presidente",
+    "vice-president":"Vicepresidente",
+    "email":"Correo Electrónico",
+    "phone":"Teléfono"
+
+
+
+
+}

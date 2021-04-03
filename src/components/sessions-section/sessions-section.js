@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import {withTranslation} from 'react-i18next';
 import "./sessions-section.css";
 
 import SessionCircle from "./session-circle.js";
@@ -23,6 +24,7 @@ class SessionsSection extends Component {
   }
 
   render() {
+    const t = this.props.t;
     return (
       <div
         id="sessions-section"
@@ -31,17 +33,17 @@ class SessionsSection extends Component {
           this.state.visibility ? "fadeable visible" : "fadeable hidden"
         }
       >
-        <SessionCircle id="circle-1" session_num="1" session="June 7 - 11" />
+        <SessionCircle id="circle-1" session_num="1" session={t('session-1')} />
         <SessionCircle
           id="circle-2"
           session_num="2"
-          session="June 21 - 25"
+          session={t('session-2')}
           big={true}
         />
-        <SessionCircle id="circle-3" session_num="3" session="July 5 - 9" />
+        <SessionCircle id="circle-3" session_num="3" session={t('session-3')} />
       </div>
     );
   }
 }
 
-export default SessionsSection;
+export default withTranslation()(SessionsSection);
