@@ -10,6 +10,11 @@ class HamburgerMenu extends Component {
     super(props);
     this.toggleLanguage = this.toggleLanguage.bind(this);
     this.handleLanguageChange = this.handleLanguageChange.bind(this);
+    this.toggleOpen = this.toggleOpen.bind(this);
+    this.handleMenuOpen = this.handleMenuOpen.bind(this);
+    this.state = {
+      open: false,
+    };
   }
 
   toggleLanguage() {
@@ -20,6 +25,18 @@ class HamburgerMenu extends Component {
     }
   }
 
+  toggleOpen() {
+    this.setState({ open: !this.state.open });
+  }
+
+  handleMenuOpen(e) {
+    if (e.target.value == "on") {
+      this.setState({ open: false });
+    } else {
+      this.setState({ open: true });
+    }
+  }
+
   handleLanguageChange(e) {
     let newLang = e.target.value;
     this.props.i18n.changeLanguage(newLang);
@@ -27,11 +44,16 @@ class HamburgerMenu extends Component {
 
   render() {
     const t = this.props.t;
+    console.log(this.state.open);
     return (
-      <nav role="navigation">
+      <nav role="navigation" onClick={this.toggleOpen}>
         <div id="menuToggleBackground">
           <div id="menuToggle">
-            <input type="checkbox" />
+            <input
+              type="checkbox"
+              checked={this.state.open}
+              onChange={this.toggleOpen}
+            />
 
             <span></span>
             <span></span>

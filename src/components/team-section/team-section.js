@@ -111,10 +111,12 @@ class TeamSection extends Component {
     this.state = { card_data: card_data, visibility: false };
     this.sectionRef = React.createRef();
     this.teamCardRowRef = React.createRef();
+    this.buttonRowRef = React.createRef();
   }
 
   componentDidMount() {
     const slider = this.teamCardRowRef.current;
+    const buttonRow = this.buttonRowRef.current;
     let isDown = false;
     let startX;
     let scrollLeft;
@@ -140,6 +142,29 @@ class TeamSection extends Component {
       const walk = (x - startX) * 1; //scroll-fast
       slider.scrollLeft = scrollLeft - walk;
     });
+
+    buttonRow.addEventListener("mousedown", (e) => {
+      isDown = true;
+      slider.classList.add("active");
+      startX = e.pageX - slider.offsetLeft;
+      scrollLeft = slider.scrollLeft;
+    });
+    buttonRow.addEventListener("mouseleave", () => {
+      isDown = false;
+      slider.classList.remove("active");
+    });
+    buttonRow.addEventListener("mouseup", () => {
+      isDown = false;
+      slider.classList.remove("active");
+    });
+    buttonRow.addEventListener("mousemove", (e) => {
+      if (!isDown) return;
+      e.preventDefault();
+      const x = e.pageX - slider.offsetLeft;
+      const walk = (x - startX) * 1; //scroll-fast
+      slider.scrollLeft = scrollLeft - walk;
+    });
+
 
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) =>
@@ -191,7 +216,7 @@ class TeamSection extends Component {
         <h1 id="team-header-text">{t("cards-header")}</h1>
 
         <div id="team-content-row">
-          <div id="scroll-button-row">
+          <div id="scroll-button-row" ref={this.buttonRowRef}>
             <ScrollButton
               leftDirection={true}
               slider={this.teamCardRowRef.current}
