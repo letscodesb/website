@@ -11,6 +11,7 @@ const jeanImage = require("./../../resources/team-pictures/jean.jpg");
 const josephImage = require("./../../resources/team-pictures/joseph.jpg");
 const neilImage = require("./../../resources/team-pictures/neil.jpg");
 const seanImage = require("./../../resources/team-pictures/sean.jpg");
+const adityaImage = require("./../../resources/team-pictures/aditya.jpg");
 
 const noImage = require("./../../resources/team-pictures/lightGray.png");
 
@@ -74,7 +75,7 @@ class TeamSection extends Component {
         name: "Aditya Biradar",
         title: "cards-titles-lab-leader",
         bio: "cards-bios-aditya",
-        img: noImage,
+        img: adityaImage,
       },
       {
         name: "Caleb Xu",
