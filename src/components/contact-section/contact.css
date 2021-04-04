@@ -153,7 +153,7 @@
     width: 420px;
     */
     height: 90vw;
-    width: 85vw;
+    width: 80vw;
     margin-top:10%;
   }
 } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
