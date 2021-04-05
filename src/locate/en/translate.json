@@ -62,6 +62,7 @@
 
     "enroll-header":"Enroll",
     "enroll-subheader":"You will receive a confirmation email",
+    "enroll-parent-first-name":"Parent First Name",
     "enroll-student-first-name":"Student First Name",
     "enroll-student-last-name":"Student Last Name",
     "enroll-parent-phone-number":"Parent Phone Number",

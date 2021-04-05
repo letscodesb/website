@@ -133,6 +133,10 @@ select {
   visibility: visible;
 }
 
+#parent-first-name-input {
+  width: 65%;
+}
+
 @media only screen and (max-width: 40em),
   only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   #signup-section {

@@ -16,6 +16,7 @@ export default withTranslation()(
       this.state = {
         parentPhone: "",
         parentEmail: "",
+        parentFirstName: "",
         studentFirstName: "",
         studentLastName: "",
         studentPhone: "",
@@ -33,7 +34,7 @@ export default withTranslation()(
       this.handleChange = this.handleChange.bind(this);
       this.handleSubmit = this.handleSubmit.bind(this);
       this.resetForm = this.resetForm.bind(this);
-      this.president_email = "devon.s.schwartz@gmail.com";
+      this.president_email = "neilaylor@hotmail.com";
     }
 
     handleChange(event) {
@@ -73,6 +74,7 @@ export default withTranslation()(
             (result) => {
               emailjs
                 .send("service_35mr7ho", "template_7u2wp7s", {
+                  parentFirstName: this.state.parentFirstName,
                   studentFirstName: this.state.studentFirstName,
                   studentLastName: this.state.studentLastName,
                   session: this.state.session,
@@ -106,6 +108,7 @@ export default withTranslation()(
 
     resetForm() {
       this.setState({
+        parentFirstName: "",
         parentPhone: "",
         parentEmail: "",
         studentFirstName: "",
@@ -148,6 +151,20 @@ export default withTranslation()(
           </div>
 
           <div id="input-section">
+            <div class="form-input-line">
+              <input
+                name="parentFirstName"
+                id="parent-first-name-input"
+                class="form-input"
+                placeholder={t("enroll-parent-first-name")}
+                onChange={this.handleChange}
+                value={this.state.parentFirstName}
+                ref={this.inputElement}
+                onFocus={this.handleInputFocus}
+                blur={this.handleInputBlur}
+                autoScrolling={false}
+              ></input>
+            </div>
             <div class="form-input-line">
               <input
                 name="studentFirstName"

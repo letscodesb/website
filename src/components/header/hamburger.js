@@ -46,14 +46,10 @@ class HamburgerMenu extends Component {
     const t = this.props.t;
     console.log(this.state.open);
     return (
-      <nav role="navigation" onClick={this.toggleOpen}>
-        <div id="menuToggleBackground">
-          <div id="menuToggle">
-            <input
-              type="checkbox"
-              checked={this.state.open}
-              onChange={this.toggleOpen}
-            />
+      <nav role="navigation">
+        <div id="menuToggleBackground" onClick={this.toggleOpen}>
+          <div id="menuToggle" onChange={this.toggleOpen}>
+            <input type="checkbox" checked={this.state.open} />
 
             <span></span>
             <span></span>
