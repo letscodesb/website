@@ -34,7 +34,7 @@ export default withTranslation()(
       this.handleChange = this.handleChange.bind(this);
       this.handleSubmit = this.handleSubmit.bind(this);
       this.resetForm = this.resetForm.bind(this);
-      this.president_email = "neilaylor@hotmail.com";
+      this.president_email = "devon.s.schwartz@gmail.com";
     }
 
     handleChange(event) {
