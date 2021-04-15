@@ -48,6 +48,7 @@
   margin: 1%;
   width: 40%;
   height: 45px;
+  touch-action: none;
 }
 
 .form-input::placeholder {
