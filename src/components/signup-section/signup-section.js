@@ -170,7 +170,7 @@ export default withTranslation()(
                 onChange={this.handleChange}
                 value={this.state.parentFirstName}
                 ref={this.inputElement}
-                onTouchStart={this.handleTouchStart}
+                onFocusIn={this.handleTouchStart}
                 blur={this.handleInputBlur}
                 autoScrolling={false}
               ></input>
@@ -184,7 +184,7 @@ export default withTranslation()(
                 onChange={this.handleChange}
                 value={this.state.studentFirstName}
                 ref={this.inputElement}
-                onTouchStart={this.handleTouchStart}
+                onFocusIn={this.handleTouchStart}
                 blur={this.handleInputBlur}
                 autoScrolling={false}
               ></input>
@@ -196,9 +196,9 @@ export default withTranslation()(
                 onChange={this.handleChange}
                 value={this.state.studentLastName}
                 ref={this.inputElement}
-                onTouchStart={this.handleTouchStart}
+                onFocusIn={this.handleTouchStart}
                 blur={this.handleInputBlur}
-                autofocus="false"
+                autoFocus={false}
                 autoScrolling={false}
               ></input>
             </div>
@@ -212,9 +212,9 @@ export default withTranslation()(
                 onChange={this.handleChange}
                 value={this.state.parentPhone}
                 ref={this.inputElement}
-                onTouchStart={this.handleTouchStart}
+                onFocusIn={this.handleTouchStart}
                 blur={this.handleInputBlur}
-                autofocus="false"
+                autoFocus={false}
                 autoScrolling={false}
               ></input>
               <input
@@ -225,9 +225,9 @@ export default withTranslation()(
                 onChange={this.handleChange}
                 value={this.state.parentEmail}
                 ref={this.inputElement}
-                onTouchStart={this.handleTouchStart}
+                onFocusIn={this.handleTouchStart}
                 blur={this.handleInputBlur}
-                autofocus="false"
+                autoFocus={false}
                 autoScrolling={false}
               ></input>
             </div>
@@ -241,9 +241,9 @@ export default withTranslation()(
                 onChange={this.handleChange}
                 value={this.state.studentPhone}
                 ref={this.inputElement}
-                onTouchStart={this.handleTouchStart}
+                onFocusIn={this.handleTouchStart}
                 blur={this.handleInputBlur}
-                autofocus="false"
+                autoFocus={false}
                 autoScrolling={false}
               ></input>
               <input
@@ -254,9 +254,9 @@ export default withTranslation()(
                 onChange={this.handleChange}
                 value={this.state.studentEmail}
                 ref={this.inputElement}
-                onTouchStart={this.handleTouchStart}
+                onFocusIn={this.handleTouchStart}
                 blur={this.handleInputBlur}
-                autofocus="false"
+                autoFocus={false}
                 autoScrolling={false}
               ></input>
             </div>
@@ -268,7 +268,7 @@ export default withTranslation()(
                 placeholder="Session"
                 onChange={this.handleChange}
                 value={this.state.session}
-                autofocus="false"
+                autoFocus={false}
               >
                 <option value="" disabled>
                   {t("session-header")}
