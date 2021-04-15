@@ -25,8 +25,12 @@ class HamburgerMenu extends Component {
     }
   }
 
-  toggleOpen() {
-    this.setState({ open: !this.state.open });
+  toggleOpen(background = false) {
+    if (background && !this.state.open) {
+      this.setState({ open: !this.state.open });
+    } else if (!background) {
+      this.setState({ open: !this.state.open });
+    }
   }
 
   handleMenuOpen(e) {
@@ -47,8 +51,8 @@ class HamburgerMenu extends Component {
     console.log(this.state.open);
     return (
       <nav role="navigation">
-        <div id="menuToggleBackground" onClick={this.toggleOpen}>
-          <div id="menuToggle" onChange={this.toggleOpen}>
+        <div id="menuToggleBackground" onClick={() => this.toggleOpen(true)}>
+          <div id="menuToggle" onChange={() => this.toggleOpen(false)}>
             <input type="checkbox" checked={this.state.open} />
 
             <span></span>
@@ -57,16 +61,36 @@ class HamburgerMenu extends Component {
 
             <ul id="menu">
               <li>
-                <a href="#header-section">{t("hamburger-home")}</a>
+                <a
+                  href="#header-section"
+                  onClick={() => this.setState({ open: false })}
+                >
+                  {t("hamburger-home")}
+                </a>
               </li>
               <li>
-                <a href="#curriculum-section">{t("hamburger-curriculum")}</a>
+                <a
+                  href="#curriculum-section"
+                  onClick={() => this.setState({ open: false })}
+                >
+                  {t("hamburger-curriculum")}
+                </a>
               </li>
               <li>
-                <a href="#signup-section">{t("hamburger-enroll")}</a>
+                <a
+                  href="#signup-section"
+                  onClick={() => this.setState({ open: false })}
+                >
+                  {t("hamburger-enroll")}
+                </a>
               </li>
               <li>
-                <a href="#contact-section">{t("hamburger-contact")}</a>
+                <a
+                  href="#contact-section"
+                  onClick={() => this.setState({ open: false })}
+                >
+                  {t("hamburger-contact")}
+                </a>
               </li>
               <li>
                 <select id="languageMenu" onChange={this.handleLanguageChange}>
