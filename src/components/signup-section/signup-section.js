@@ -29,12 +29,17 @@ export default withTranslation()(
       this.domRef = React.createRef();
       this.inputElement = React.createRef();
 
+      this.handleTouchStart = this.handleTouchStart.bind(this);
       this.handleInputFocus = this.handleInputFocus.bind(this);
       this.handleInputBlur = this.handleInputBlur.bind(this);
       this.handleChange = this.handleChange.bind(this);
       this.handleSubmit = this.handleSubmit.bind(this);
       this.resetForm = this.resetForm.bind(this);
       this.president_email = "devon.s.schwartz@gmail.com";
+    }
+
+    componentWillMount() {
+      //React.initializeTouchEvents(true);
     }
 
     handleChange(event) {
@@ -133,6 +138,11 @@ export default withTranslation()(
 
     handleInputBlur($) {}
 
+    handleTouchStart(e) {
+      e.preventDefault();
+      e.nativeEvent.preventDefault();
+    }
+
     render() {
       const t = this.props.t;
       return (
@@ -160,7 +170,7 @@ export default withTranslation()(
                 onChange={this.handleChange}
                 value={this.state.parentFirstName}
                 ref={this.inputElement}
-                onFocus={this.handleInputFocus}
+                onTouchStart={this.handleTouchStart}
                 blur={this.handleInputBlur}
                 autoScrolling={false}
               ></input>
@@ -174,7 +184,7 @@ export default withTranslation()(
                 onChange={this.handleChange}
                 value={this.state.studentFirstName}
                 ref={this.inputElement}
-                onFocus={this.handleInputFocus}
+                onTouchStart={this.handleTouchStart}
                 blur={this.handleInputBlur}
                 autoScrolling={false}
               ></input>
@@ -186,7 +196,7 @@ export default withTranslation()(
                 onChange={this.handleChange}
                 value={this.state.studentLastName}
                 ref={this.inputElement}
-                onFocus={this.handleInputFocus}
+                onTouchStart={this.handleTouchStart}
                 blur={this.handleInputBlur}
                 autofocus="false"
                 autoScrolling={false}
@@ -202,7 +212,7 @@ export default withTranslation()(
                 onChange={this.handleChange}
                 value={this.state.parentPhone}
                 ref={this.inputElement}
-                onFocus={this.handleInputFocus}
+                onTouchStart={this.handleTouchStart}
                 blur={this.handleInputBlur}
                 autofocus="false"
                 autoScrolling={false}
@@ -215,7 +225,7 @@ export default withTranslation()(
                 onChange={this.handleChange}
                 value={this.state.parentEmail}
                 ref={this.inputElement}
-                onFocus={this.handleInputFocus}
+                onTouchStart={this.handleTouchStart}
                 blur={this.handleInputBlur}
                 autofocus="false"
                 autoScrolling={false}
@@ -231,7 +241,7 @@ export default withTranslation()(
                 onChange={this.handleChange}
                 value={this.state.studentPhone}
                 ref={this.inputElement}
-                onFocus={this.handleInputFocus}
+                onTouchStart={this.handleTouchStart}
                 blur={this.handleInputBlur}
                 autofocus="false"
                 autoScrolling={false}
@@ -244,7 +254,7 @@ export default withTranslation()(
                 onChange={this.handleChange}
                 value={this.state.studentEmail}
                 ref={this.inputElement}
-                onFocus={this.handleInputFocus}
+                onTouchStart={this.handleTouchStart}
                 blur={this.handleInputBlur}
                 autofocus="false"
                 autoScrolling={false}
