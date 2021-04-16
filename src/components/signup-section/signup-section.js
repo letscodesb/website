@@ -23,7 +23,7 @@ export default withTranslation()(
         studentEmail: "",
         session: "",
         grade: "",
-        visibility: false,
+        visibility: true,
       };
 
       this.domRef = React.createRef();
@@ -127,9 +127,9 @@ export default withTranslation()(
 
     componentDidMount() {
       const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) =>
-          this.setState({ visibility: entry.isIntersecting })
-        );
+        //entries.forEach((entry) =>
+          //this.setState({ visibility: entry.isIntersecting })
+        //);
       });
       observer.observe(this.domRef.current);
     }
@@ -172,7 +172,7 @@ export default withTranslation()(
                 ref={this.inputElement}
                 onFocusIn={this.handleTouchStart}
                 blur={this.handleInputBlur}
-                autoScrolling={false}
+                onFocus={this.handleTouchStart}
               ></input>
             </div>
             <div class="form-input-line">
@@ -186,7 +186,7 @@ export default withTranslation()(
                 ref={this.inputElement}
                 onFocusIn={this.handleTouchStart}
                 blur={this.handleInputBlur}
-                autoScrolling={false}
+                onFocus={this.handleTouchStart}
               ></input>
               <input
                 name="studentLastName"
@@ -199,7 +199,7 @@ export default withTranslation()(
                 onFocusIn={this.handleTouchStart}
                 blur={this.handleInputBlur}
                 autoFocus={false}
-                autoScrolling={false}
+                onFocus={this.handleTouchStart}
               ></input>
             </div>
 
@@ -215,7 +215,7 @@ export default withTranslation()(
                 onFocusIn={this.handleTouchStart}
                 blur={this.handleInputBlur}
                 autoFocus={false}
-                autoScrolling={false}
+                onFocus={this.handleTouchStart}
               ></input>
               <input
                 name="parentEmail"
@@ -228,7 +228,7 @@ export default withTranslation()(
                 onFocusIn={this.handleTouchStart}
                 blur={this.handleInputBlur}
                 autoFocus={false}
-                autoScrolling={false}
+                onFocus={this.handleTouchStart}
               ></input>
             </div>
 
@@ -244,7 +244,7 @@ export default withTranslation()(
                 onFocusIn={this.handleTouchStart}
                 blur={this.handleInputBlur}
                 autoFocus={false}
-                autoScrolling={false}
+                onFocus={this.handleTouchStart}
               ></input>
               <input
                 name="studentEmail"
@@ -257,7 +257,7 @@ export default withTranslation()(
                 onFocusIn={this.handleTouchStart}
                 blur={this.handleInputBlur}
                 autoFocus={false}
-                autoScrolling={false}
+                onFocus={this.handleTouchStart}
               ></input>
             </div>
             <div class="form-input-line option-line" id="first-select-line">

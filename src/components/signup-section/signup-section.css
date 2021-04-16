@@ -48,7 +48,6 @@
   margin: 1%;
   width: 40%;
   height: 45px;
-  touch-action: none;
 }
 
 .form-input::placeholder {
@@ -58,7 +57,7 @@
 }
 
 .form-input:focus {
-  outline: 0;
+  outline: none;
 }
 
 #parent-phone,
