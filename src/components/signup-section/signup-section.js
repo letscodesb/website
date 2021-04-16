@@ -126,12 +126,15 @@ export default withTranslation()(
     }
 
     componentDidMount() {
+      /*
       const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) =>
           this.setState({ visibility: entry.isIntersecting })
         );
       });
+
       observer.observe(this.domRef.current);
+      */
     }
 
     handleInputFocus(e) {}
