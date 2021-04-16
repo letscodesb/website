@@ -128,7 +128,7 @@ export default withTranslation()(
     componentDidMount() {
       const observer = new IntersectionObserver((entries) => {
         //entries.forEach((entry) =>
-          //this.setState({ visibility: entry.isIntersecting })
+        //this.setState({ visibility: entry.isIntersecting })
         //);
       });
       observer.observe(this.domRef.current);
@@ -136,7 +136,10 @@ export default withTranslation()(
 
     handleInputFocus(e) {}
 
-    handleInputBlur($) {}
+    handleInputBlur(e) {
+      e.preventDefault();
+      e.nativeEvent.preventDefault();
+    }
 
     handleTouchStart(e) {
       e.preventDefault();
@@ -171,7 +174,7 @@ export default withTranslation()(
                 value={this.state.parentFirstName}
                 ref={this.inputElement}
                 onFocusIn={this.handleTouchStart}
-                blur={this.handleInputBlur}
+                onBlur={this.handleInputBlur}
                 onFocus={this.handleTouchStart}
               ></input>
             </div>
@@ -185,7 +188,7 @@ export default withTranslation()(
                 value={this.state.studentFirstName}
                 ref={this.inputElement}
                 onFocusIn={this.handleTouchStart}
-                blur={this.handleInputBlur}
+                onBlur={this.handleInputBlur}
                 onFocus={this.handleTouchStart}
               ></input>
               <input
@@ -197,7 +200,7 @@ export default withTranslation()(
                 value={this.state.studentLastName}
                 ref={this.inputElement}
                 onFocusIn={this.handleTouchStart}
-                blur={this.handleInputBlur}
+                onBlur={this.handleInputBlur}
                 autoFocus={false}
                 onFocus={this.handleTouchStart}
               ></input>
@@ -213,7 +216,7 @@ export default withTranslation()(
                 value={this.state.parentPhone}
                 ref={this.inputElement}
                 onFocusIn={this.handleTouchStart}
-                blur={this.handleInputBlur}
+                onBlur={this.handleInputBlur}
                 autoFocus={false}
                 onFocus={this.handleTouchStart}
               ></input>
@@ -226,7 +229,7 @@ export default withTranslation()(
                 value={this.state.parentEmail}
                 ref={this.inputElement}
                 onFocusIn={this.handleTouchStart}
-                blur={this.handleInputBlur}
+                onBlur={this.handleInputBlur}
                 autoFocus={false}
                 onFocus={this.handleTouchStart}
               ></input>
@@ -242,7 +245,7 @@ export default withTranslation()(
                 value={this.state.studentPhone}
                 ref={this.inputElement}
                 onFocusIn={this.handleTouchStart}
-                blur={this.handleInputBlur}
+                onBlur={this.handleInputBlur}
                 autoFocus={false}
                 onFocus={this.handleTouchStart}
               ></input>
@@ -255,7 +258,7 @@ export default withTranslation()(
                 value={this.state.studentEmail}
                 ref={this.inputElement}
                 onFocusIn={this.handleTouchStart}
-                blur={this.handleInputBlur}
+                onBlur={this.handleInputBlur}
                 autoFocus={false}
                 onFocus={this.handleTouchStart}
               ></input>
