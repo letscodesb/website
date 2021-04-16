@@ -139,11 +139,17 @@ export default withTranslation()(
     handleInputBlur(e) {
       e.preventDefault();
       e.nativeEvent.preventDefault();
+      this.setState({
+        visibility: true,
+      });
     }
 
     handleTouchStart(e) {
       e.preventDefault();
       e.nativeEvent.preventDefault();
+      this.setState({
+        visibility: true,
+      });
     }
 
     render() {
