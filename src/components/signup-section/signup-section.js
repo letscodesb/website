@@ -23,6 +23,7 @@ export default withTranslation()(
         studentEmail: "",
         session: "",
         grade: "",
+        school: "",
         visibility: true,
       };
 
@@ -84,6 +85,7 @@ export default withTranslation()(
                   studentLastName: this.state.studentLastName,
                   session: this.state.session,
                   grade: this.state.grade,
+                  school: this.state.school,
                   parentEmail: this.state.parentEmail,
                   parentPhone: this.state.parentPhone,
                   studentEmail: this.state.studentEmail,
@@ -122,6 +124,7 @@ export default withTranslation()(
         studentEmail: "",
         session: "",
         grade: "",
+        school: "",
       });
     }
 
@@ -265,6 +268,21 @@ export default withTranslation()(
                 placeholder={t("enroll-student-email")}
                 onChange={this.handleChange}
                 value={this.state.studentEmail}
+                ref={this.inputElement}
+                onFocusIn={this.handleTouchStart}
+                onBlur={this.handleInputBlur}
+                autoFocus={false}
+                onFocus={this.handleTouchStart}
+              ></input>
+            </div>
+            <div class="form-input-line">
+              <input
+                name="school"
+                id="school-input"
+                class="form-input"
+                placeholder={t("enroll-school")}
+                onChange={this.handleChange}
+                value={this.state.school}
                 ref={this.inputElement}
                 onFocusIn={this.handleTouchStart}
                 onBlur={this.handleInputBlur}

@@ -69,6 +69,7 @@
     "enroll-parent-email":"Parent Email",
     "enroll-student-phone":"Student Phone (Optional)",
     "enroll-student-email":"Stuent Email (Optional)",
+    "enroll-school" : "School",
     "session-header" : "Session",
     "grade-header" : "Grade in Fall 2021",
     "incoming-6" :"Incoming 6th Grader",

@@ -66,6 +66,10 @@
   height: 50px;
 }
 
+#school-input {
+  width: 70%;
+}
+
 #first-select-line {
   margin-top: 5%;
 }
