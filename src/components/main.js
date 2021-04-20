@@ -1,6 +1,7 @@
 import "./main.css";
 import "../fonts.css";
 import React from "react";
+import ReactGA from "react-ga";
 
 // Components
 import Header from "./header/header.js";
@@ -17,6 +18,8 @@ import LanguageContext from "./../contexts/LanguageContext";
 class MainPage extends React.Component {
   render() {
     let lang = "english";
+    ReactGA.initialize("G-Y0CNCDC2XQ");
+    ReactGA.pageview(window.location.pathname + window.location.search);
 
     return (
       <html>
