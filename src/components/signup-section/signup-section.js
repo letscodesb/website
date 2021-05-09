@@ -149,7 +149,10 @@ export default withTranslation()(
       }
     }
 
-    handleInputFocus(e) {}
+    handleInputFocus(e) {
+      e.preventDefault();
+      e.nativeEvent.preventDefault();
+    }
 
     handleInputBlur(e) {
       /*
@@ -196,6 +199,7 @@ export default withTranslation()(
                 onChange={this.handleChange}
                 value={this.state.parentFirstName}
                 ref={this.inputElement}
+                onFocus={this.handleInputFocus}
               ></input>
             </div>
             <div class="form-input-line">
@@ -207,6 +211,8 @@ export default withTranslation()(
                 onChange={this.handleChange}
                 value={this.state.studentFirstName}
                 ref={this.inputElement}
+                onFocus={this.handleInputFocus}
+
               ></input>
               <input
                 name="studentLastName"
@@ -216,6 +222,8 @@ export default withTranslation()(
                 onChange={this.handleChange}
                 value={this.state.studentLastName}
                 ref={this.inputElement}
+                onFocus={this.handleInputFocus}
+
               ></input>
             </div>
 
@@ -228,6 +236,8 @@ export default withTranslation()(
                 onChange={this.handleChange}
                 value={this.state.parentPhone}
                 ref={this.inputElement}
+                onFocus={this.handleInputFocus}
+
               ></input>
               <input
                 name="parentEmail"
@@ -237,6 +247,8 @@ export default withTranslation()(
                 onChange={this.handleChange}
                 value={this.state.parentEmail}
                 ref={this.inputElement}
+                onFocus={this.handleInputFocus}
+
               ></input>
             </div>
 
@@ -249,6 +261,8 @@ export default withTranslation()(
                 onChange={this.handleChange}
                 value={this.state.studentPhone}
                 ref={this.inputElement}
+                onFocus={this.handleInputFocus}
+
               ></input>
               <input
                 name="studentEmail"
@@ -258,6 +272,8 @@ export default withTranslation()(
                 onChange={this.handleChange}
                 value={this.state.studentEmail}
                 ref={this.inputElement}
+                onFocus={this.handleInputFocus}
+
               ></input>
             </div>
             <div class="form-input-line">
@@ -269,6 +285,8 @@ export default withTranslation()(
                 onChange={this.handleChange}
                 value={this.state.school}
                 ref={this.inputElement}
+                onFocus={this.handleInputFocus}
+
               ></input>
             </div>
             <div class="form-input-line option-line" id="first-select-line">
