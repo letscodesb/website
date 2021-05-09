@@ -39,9 +39,6 @@ export default withTranslation()(
       this.president_email = "devon.s.schwartz@gmail.com";
     }
 
-    componentWillMount() {
-      //React.initializeTouchEvents(true);
-    }
 
     handleChange(event) {
       let val = event.target.value;
@@ -138,6 +135,18 @@ export default withTranslation()(
 
       observer.observe(this.domRef.current);
       */
+      if (/Android [4-6]/.test(navigator.appVersion)) {
+        window.addEventListener("resize", function () {
+          if (
+            document.activeElement.tagName == "INPUT" ||
+            document.activeElement.tagName == "TEXTAREA"
+          ) {
+            window.setTimeout(function () {
+              document.activeElement.scrollIntoViewIfNeeded();
+            }, 0);
+          }
+        });
+      }
     }
 
     handleInputFocus(e) {}
@@ -168,9 +177,7 @@ export default withTranslation()(
         <div
           id="signup-section"
           ref={this.domRef}
-          className={
-            this.state.visibility ? " visible" : " hidden"
-          }
+          className={this.state.visibility ? " visible" : " hidden"}
         >
           <div id="signup-section-header">
             <h1 id="signup-section-header-text">{t("enroll-header")}</h1>
@@ -200,7 +207,6 @@ export default withTranslation()(
                 onChange={this.handleChange}
                 value={this.state.studentFirstName}
                 ref={this.inputElement}
-  
               ></input>
               <input
                 name="studentLastName"
@@ -210,7 +216,6 @@ export default withTranslation()(
                 onChange={this.handleChange}
                 value={this.state.studentLastName}
                 ref={this.inputElement}
-
               ></input>
             </div>
 
@@ -223,7 +228,6 @@ export default withTranslation()(
                 onChange={this.handleChange}
                 value={this.state.parentPhone}
                 ref={this.inputElement}
-
               ></input>
               <input
                 name="parentEmail"
@@ -233,7 +237,6 @@ export default withTranslation()(
                 onChange={this.handleChange}
                 value={this.state.parentEmail}
                 ref={this.inputElement}
-
               ></input>
             </div>
 
@@ -246,7 +249,6 @@ export default withTranslation()(
                 onChange={this.handleChange}
                 value={this.state.studentPhone}
                 ref={this.inputElement}
-
               ></input>
               <input
                 name="studentEmail"
@@ -256,7 +258,6 @@ export default withTranslation()(
                 onChange={this.handleChange}
                 value={this.state.studentEmail}
                 ref={this.inputElement}
-
               ></input>
             </div>
             <div class="form-input-line">
@@ -268,7 +269,6 @@ export default withTranslation()(
                 onChange={this.handleChange}
                 value={this.state.school}
                 ref={this.inputElement}
- 
               ></input>
             </div>
             <div class="form-input-line option-line" id="first-select-line">
