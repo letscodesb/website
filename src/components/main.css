@@ -3,8 +3,7 @@
 }
 
 #flip-phone {
-  visibility: hidden;
-  display: flex;
+  display: none;
   width: 100vw;
   height: 100vh;
   font-family: Roboto;
@@ -25,6 +24,6 @@
       display:none;
     }
     #flip-phone {
-      visibility: visible;
+      display: flex;
     }
   }
