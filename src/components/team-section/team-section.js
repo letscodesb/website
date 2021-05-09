@@ -216,7 +216,7 @@ class TeamSection extends Component {
         }
       >
         <h1 id="team-header-text">{t("cards-header")}</h1>
-        <h2 id='team-subheader' class='mobile-only'>Scroll right to view</h2>
+        <h2 id='team-subheader' class='mobile-only'>{t("cards-subheader-mobile")}</h2>
         <div id="team-content-row">
           <div id="scroll-button-row" ref={this.buttonRowRef}>
             <ScrollButton

@@ -48,7 +48,6 @@ class HamburgerMenu extends Component {
 
   render() {
     const t = this.props.t;
-    console.log(this.state.open);
     return (
       <nav role="navigation">
         <div id="menuToggleBackground" onClick={() => this.toggleOpen(true)}>
