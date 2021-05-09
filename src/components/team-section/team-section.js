@@ -9,7 +9,8 @@ const devonImage = require("./../../resources/team-pictures/devon.png");
 const annieImage = require("./../../resources/team-pictures/annie.jpeg");
 const jeanImage = require("./../../resources/team-pictures/jean.jpg");
 const josephImage = require("./../../resources/team-pictures/joseph.jpg");
-const neilImage = require("./../../resources/team-pictures/neil.jpg");
+//const neilImage = require("./../../resources/team-pictures/neil.jpg");
+const neilImage = require("./../../resources/team-pictures/neil-2.jpg");
 const seanImage = require("./../../resources/team-pictures/sean.jpg");
 const adityaImage = require("./../../resources/team-pictures/aditya.jpg");
 
