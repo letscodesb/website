@@ -28,7 +28,7 @@ export default withTranslation()(
         <div
           id="contact-section"
           className={
-            this.state.visibility ? "fadeable visible" : "fadeable hidden"
+            this.state.visibility ? " visible" : " hidden"
           }
         >
           <div id="contact-section-header">

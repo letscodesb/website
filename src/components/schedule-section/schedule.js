@@ -50,7 +50,7 @@ export default withTranslation()(
           id="schedule-section"
           ref={this.domRef}
           className={
-            this.state.visibility ? "fadeable visible" : "fadeable hidden"
+            this.state.visibility ? " visible" : " hidden"
           }
         >
           <div id="schedule-section-header">

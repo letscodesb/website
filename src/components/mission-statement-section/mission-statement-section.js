@@ -27,7 +27,7 @@ class MissionStatementSection extends Component {
       <div
         id="mission-statement-section"
         className={
-          this.state.visibility ? "fadeable visible" : "fadeable hidden"
+          this.state.visibility ? " visible" : " hidden"
         }
       >
         <h1 id="mission-statement-header">{t("mission-header")}</h1>

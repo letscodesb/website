@@ -1,3 +1,30 @@
 #wrapper {
     text-align: center
 }
+
+#flip-phone {
+  visibility: none;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  font-family: Roboto;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+#flip-phone > h1 {
+  font-size: 28px;
+  font-weight: 300;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+    
+    #wrapper {
+      display:none;
+    }
+    #flip-phone {
+      visibility: visible;
+    }
+  }

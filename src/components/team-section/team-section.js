@@ -212,11 +212,11 @@ class TeamSection extends Component {
         id="team-section"
         ref={this.sectionRef}
         className={
-          this.state.visibility ? "fadeable visible" : "fadeable hidden"
+          this.state.visibility ? " visible" : " hidden"
         }
       >
         <h1 id="team-header-text">{t("cards-header")}</h1>
-
+        <h2 id='team-subheader' class='mobile-only'>Scroll right to view</h2>
         <div id="team-content-row">
           <div id="scroll-button-row" ref={this.buttonRowRef}>
             <ScrollButton

@@ -31,14 +31,14 @@ class Header extends Component {
         <div
           id="logo"
           className={
-            this.state.visibility ? "fadeable visible" : "fadeable hidden"
+            this.state.visibility ? " visible" : " hidden"
           }
         ></div>
         <HamburgerMenu id="hamburger-menu" />
         <div
           id="camp-description-section"
           className={
-            this.state.visibility ? "fadeable visible" : "fadeable hidden"
+            this.state.visibility ? " visible" : " hidden"
           }
         >
           <p id="camp-description-text" ref={this.domRef}>{t('header-description')}</p>

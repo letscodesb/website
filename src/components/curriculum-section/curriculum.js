@@ -25,7 +25,7 @@ class CurriculumSection extends Component {
   render() {
     const t = this.props.t;
     return (
-      <div id="curriculum-section" className={this.state.visibility ? 'fadeable visible' : 'fadeable hidden'} ref={this.domRef}>
+      <div id="curriculum-section" className={this.state.visibility ? ' visible' : ' hidden'} ref={this.domRef}>
         <h2 id="curriculum-section-header">{t('curriculum-header')}</h2>
 
         <div id="list-section">

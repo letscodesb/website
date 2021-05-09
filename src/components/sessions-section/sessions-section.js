@@ -30,7 +30,7 @@ class SessionsSection extends Component {
         id="sessions-section"
         ref={this.domRef}
         className={
-          this.state.visibility ? "fadeable visible" : "fadeable hidden"
+          this.state.visibility ? " visible" : " hidden"
         }
       >
         <SessionCircle id="circle-1" session_num="1" session={t('session-1')} />

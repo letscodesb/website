@@ -37,6 +37,10 @@ class MainPage extends React.Component {
               <ContactSection />
             </LanguageContext.Provider>
           </div>
+
+          <div id='flip-phone'>
+            <h1> Please rotate your phone to portrait mode. </h1>
+          </div>
         </body>
       </html>
     );
