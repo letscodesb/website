@@ -135,7 +135,7 @@ export default withTranslation()(
 
       observer.observe(this.domRef.current);
       */
-      if (/Android [4-6]/.test(navigator.appVersion)) {
+      if (/Android/.test(navigator.appVersion)) {
         window.addEventListener("resize", function () {
           if (
             document.activeElement.tagName == "INPUT" ||
