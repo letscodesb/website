@@ -143,19 +143,23 @@ export default withTranslation()(
     handleInputFocus(e) {}
 
     handleInputBlur(e) {
+      /*
       e.preventDefault();
       e.nativeEvent.preventDefault();
       this.setState({
         visibility: true,
       });
+      */
     }
 
     handleTouchStart(e) {
+      /*
       e.preventDefault();
       e.nativeEvent.preventDefault();
       this.setState({
         visibility: true,
       });
+      */
     }
 
     render() {
@@ -165,7 +169,7 @@ export default withTranslation()(
           id="signup-section"
           ref={this.domRef}
           className={
-            this.state.visibility ? "fadeable visible" : "fadeable hidden"
+            this.state.visibility ? " visible" : " hidden"
           }
         >
           <div id="signup-section-header">
@@ -185,9 +189,6 @@ export default withTranslation()(
                 onChange={this.handleChange}
                 value={this.state.parentFirstName}
                 ref={this.inputElement}
-                onFocusIn={this.handleTouchStart}
-                onBlur={this.handleInputBlur}
-                onFocus={this.handleTouchStart}
               ></input>
             </div>
             <div class="form-input-line">
@@ -199,9 +200,7 @@ export default withTranslation()(
                 onChange={this.handleChange}
                 value={this.state.studentFirstName}
                 ref={this.inputElement}
-                onFocusIn={this.handleTouchStart}
-                onBlur={this.handleInputBlur}
-                onFocus={this.handleTouchStart}
+  
               ></input>
               <input
                 name="studentLastName"
@@ -211,10 +210,7 @@ export default withTranslation()(
                 onChange={this.handleChange}
                 value={this.state.studentLastName}
                 ref={this.inputElement}
-                onFocusIn={this.handleTouchStart}
-                onBlur={this.handleInputBlur}
-                autoFocus={false}
-                onFocus={this.handleTouchStart}
+
               ></input>
             </div>
 
@@ -227,10 +223,7 @@ export default withTranslation()(
                 onChange={this.handleChange}
                 value={this.state.parentPhone}
                 ref={this.inputElement}
-                onFocusIn={this.handleTouchStart}
-                onBlur={this.handleInputBlur}
-                autoFocus={false}
-                onFocus={this.handleTouchStart}
+
               ></input>
               <input
                 name="parentEmail"
@@ -240,10 +233,7 @@ export default withTranslation()(
                 onChange={this.handleChange}
                 value={this.state.parentEmail}
                 ref={this.inputElement}
-                onFocusIn={this.handleTouchStart}
-                onBlur={this.handleInputBlur}
-                autoFocus={false}
-                onFocus={this.handleTouchStart}
+
               ></input>
             </div>
 
@@ -256,10 +246,7 @@ export default withTranslation()(
                 onChange={this.handleChange}
                 value={this.state.studentPhone}
                 ref={this.inputElement}
-                onFocusIn={this.handleTouchStart}
-                onBlur={this.handleInputBlur}
-                autoFocus={false}
-                onFocus={this.handleTouchStart}
+
               ></input>
               <input
                 name="studentEmail"
@@ -269,10 +256,7 @@ export default withTranslation()(
                 onChange={this.handleChange}
                 value={this.state.studentEmail}
                 ref={this.inputElement}
-                onFocusIn={this.handleTouchStart}
-                onBlur={this.handleInputBlur}
-                autoFocus={false}
-                onFocus={this.handleTouchStart}
+
               ></input>
             </div>
             <div class="form-input-line">
@@ -284,10 +268,7 @@ export default withTranslation()(
                 onChange={this.handleChange}
                 value={this.state.school}
                 ref={this.inputElement}
-                onFocusIn={this.handleTouchStart}
-                onBlur={this.handleInputBlur}
-                autoFocus={false}
-                onFocus={this.handleTouchStart}
+ 
               ></input>
             </div>
             <div class="form-input-line option-line" id="first-select-line">
@@ -298,7 +279,6 @@ export default withTranslation()(
                 placeholder="Session"
                 onChange={this.handleChange}
                 value={this.state.session}
-                autoFocus={false}
               >
                 <option value="" disabled>
                   {t("session-header")}
