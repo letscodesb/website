@@ -122,51 +122,110 @@ class TeamSection extends Component {
     let isDown = false;
     let startX;
     let scrollLeft;
+    let isMobile;
 
-    slider.addEventListener("mousedown", (e) => {
-      isDown = true;
-      slider.classList.add("active");
-      startX = e.pageX - slider.offsetLeft;
-      scrollLeft = slider.scrollLeft;
-    });
-    slider.addEventListener("mouseleave", () => {
-      isDown = false;
-      slider.classList.remove("active");
-    });
-    slider.addEventListener("mouseup", () => {
-      isDown = false;
-      slider.classList.remove("active");
-    });
-    slider.addEventListener("mousemove", (e) => {
-      if (!isDown) return;
-      e.preventDefault();
-      const x = e.pageX - slider.offsetLeft;
-      const walk = (x - startX) * 1; //scroll-fast
-      slider.scrollLeft = scrollLeft - walk;
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 768){
+        isMobile = false;
+      }else if(window.innerWidth <= 768){
+        isMobile = true;
+      }
     });
 
-    buttonRow.addEventListener("mousedown", (e) => {
-      isDown = true;
-      slider.classList.add("active");
-      startX = e.pageX - slider.offsetLeft;
-      scrollLeft = slider.scrollLeft;
-    });
-    buttonRow.addEventListener("mouseleave", () => {
-      isDown = false;
-      slider.classList.remove("active");
-    });
-    buttonRow.addEventListener("mouseup", () => {
-      isDown = false;
-      slider.classList.remove("active");
-    });
-    buttonRow.addEventListener("mousemove", (e) => {
-      if (!isDown) return;
-      e.preventDefault();
-      const x = e.pageX - slider.offsetLeft;
-      const walk = (x - startX) * 1; //scroll-fast
-      slider.scrollLeft = scrollLeft - walk;
-    });
+    if (!isMobile) {
+      // desktop
+      slider.addEventListener("mousedown", (e) => {
+        isDown = true;
+        slider.classList.add("active");
+        startX = e.pageX - slider.offsetLeft;
+        scrollLeft = slider.scrollLeft;
+      });
+      slider.addEventListener("mouseleave", () => {
+        isDown = false;
+        slider.classList.remove("active");
+      });
+      slider.addEventListener("mouseup", () => {
+        isDown = false;
+        slider.classList.remove("active");
+      });
+      slider.addEventListener("mousemove", (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - slider.offsetLeft;
+        const walk = (x - startX) * 1; //scroll-fast
+        slider.scrollLeft = scrollLeft - walk;
+      });
 
+      buttonRow.addEventListener("mousedown", (e) => {
+        isDown = true;
+        slider.classList.add("active");
+        startX = e.pageX - slider.offsetLeft;
+        scrollLeft = slider.scrollLeft;
+      });
+      buttonRow.addEventListener("mouseleave", () => {
+        isDown = false;
+        slider.classList.remove("active");
+      });
+      buttonRow.addEventListener("mouseup", () => {
+        isDown = false;
+        slider.classList.remove("active");
+      });
+      buttonRow.addEventListener("mousemove", (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - slider.offsetLeft;
+        const walk = (x - startX) * 1; //scroll-fast
+        slider.scrollLeft = scrollLeft - walk;
+      });
+    } else if (isMobile) {
+      //mobile
+
+      slider.addEventListener("touchstart", (e) => {
+        isDown = true;
+        slider.classList.add("active");
+        startX = e.changedTouches[0].pageX - slider.offsetLeft;
+        scrollLeft = slider.scrollLeft;
+      });
+      slider.addEventListener("touchend", (e) => {
+        isDown = false;
+        slider.classList.remove("active");
+      });
+      slider.addEventListener("touchcancel", (e) => {
+        isDown = false;
+
+        slider.classList.remove("active");
+      });
+      slider.addEventListener("touchmove", (e) => {
+        if (!isDown) return;
+        //e.preventDefault();
+        const x = e.changedTouches[0].pageX - slider.offsetLeft;
+        const walk = (x - startX) * 1; //scroll-fast
+        slider.scrollLeft = scrollLeft - walk;
+        console.log(e.changedTouches)
+      });
+
+      buttonRow.addEventListener("touchstart", (e) => {
+        isDown = true;
+        slider.classList.add("active");
+        startX = e.changedTouches[0].pageX - slider.offsetLeft;
+        scrollLeft = slider.scrollLeft;
+      });
+      buttonRow.addEventListener("touchend", () => {
+        isDown = false;
+        slider.classList.remove("active");
+      });
+      buttonRow.addEventListener("touchcancel", () => {
+        isDown = false;
+        slider.classList.remove("active");
+      });
+      buttonRow.addEventListener("touchmove", (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - slider.offsetLeft;
+        const walk = (x - startX) * 1; //scroll-fast
+        slider.scrollLeft = scrollLeft - walk;
+      });
+    }
 
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) =>
@@ -211,12 +270,12 @@ class TeamSection extends Component {
       <div
         id="team-section"
         ref={this.sectionRef}
-        className={
-          this.state.visibility ? " visible" : " hidden"
-        }
+        className={this.state.visibility ? " visible" : " hidden"}
       >
         <h1 id="team-header-text">{t("cards-header")}</h1>
-        <h2 id='team-subheader' class='mobile-only'>{t("cards-subheader-mobile")}</h2>
+        <h2 id="team-subheader" class="mobile-only">
+          {t("cards-subheader-mobile")}
+        </h2>
         <div id="team-content-row">
           <div id="scroll-button-row" ref={this.buttonRowRef}>
             <ScrollButton
