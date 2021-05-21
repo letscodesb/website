@@ -102,12 +102,14 @@ class TeamSection extends Component {
         bio: "cards-bios-sean",
         img: seanImage,
       },
+      /*
       {
         name: "Jerome Conkright",
         title: "cards-titles-lab-leader",
         bio: "cards-bios-jerome",
         img: noImage,
       },
+      */
     ];
 
     this.state = { card_data: card_data, visibility: false };
