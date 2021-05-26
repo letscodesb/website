@@ -13,6 +13,7 @@ const josephImage = require("./../../resources/team-pictures/joseph.jpg");
 const neilImage = require("./../../resources/team-pictures/neil-2.jpg");
 const seanImage = require("./../../resources/team-pictures/sean.jpg");
 const adityaImage = require("./../../resources/team-pictures/aditya.jpg");
+const alyssaImage = require('./../../resources/team-pictures/alyssa.jpg')
 
 const noImage = require("./../../resources/team-pictures/lightGray.png");
 
@@ -102,6 +103,12 @@ class TeamSection extends Component {
         bio: "cards-bios-sean",
         img: seanImage,
       },
+      {
+        name: "Alyssa Nomura",
+        title: "cards-titles-lab-leader",
+        bio: "cards-bios-alyssa",
+        img: alyssaImage,
+      }
       /*
       {
         name: "Jerome Conkright",
