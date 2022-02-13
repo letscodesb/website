@@ -12,7 +12,7 @@ import SessionsSection from "./sessions-section/sessions-section";
 import ScheduleSection from "./schedule-section/schedule";
 import SignupSection from "./signup-section/signup-section";
 import ContactSection from "./contact-section/contact";
-
+import Popup from "./popup/popup"; 
 import LanguageContext from "./../contexts/LanguageContext";
 
 class MainPage extends React.Component {
@@ -27,6 +27,7 @@ class MainPage extends React.Component {
         <body>
           <div id="wrapper">
             <LanguageContext.Provider value={lang}>
+              <Popup/>
               <Header />
               <TeamSection />
               <CurriculumSection />
@@ -41,8 +42,12 @@ class MainPage extends React.Component {
           <div id='flip-phone'>
             <h1> Please rotate your phone to portrait mode. </h1>
           </div>
+
+         
         </body>
       </html>
+
+      
     );
   }
 }
