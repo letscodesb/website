@@ -27,7 +27,7 @@ class MainPage extends React.Component {
         <body>
           <div id="wrapper">
             <LanguageContext.Provider value={lang}>
-              {/*<Popup/> Remove for now, you can't close it. */}
+              {<Popup/> /*Remove for now, you can't close it. */}
               <Header />
               <TeamSection />
               <CurriculumSection />
