@@ -24,8 +24,15 @@ class TeamSection extends Component {
     const t = this.props.t;
     let card_data = [
       {
-        name: "Devon Schwartz",
+        name: "Jean Hoang",
         title: "cards-titles-president-and-lab-leader",
+        bio: "cards-bios-jean",
+        img: jeanImage,
+        longBio: true,
+      },
+      {
+        name: "Devon Schwartz",
+        title: "cards-titles-vice-president-and-lab-leader",
         bio: "cards-bios-devon",
         img: devonImage,
         medBio: true,
@@ -36,88 +43,74 @@ class TeamSection extends Component {
         bio: "cards-bios-neil",
         img: neilImage,
         medBio: true,
-      },
-      {
-        name: "Jean Hoang",
-        title: "cards-titles-head-of-communications-and-lab-leader",
-        bio: "cards-bios-jean",
-        img: jeanImage,
-        longBio: true,
-      },
-      {
-        name: "Bryce Elphingstone",
-        title: "cards-titles-lab-leader",
-        bio: "cards-bios-bryce",
-        img: noImage,
-      },
-      {
-        name: "Joseph Bolduc",
-        title: "cards-titles-lab-leader",
-        bio: "cards-bios-joseph",
-        img: josephImage,
-      },
-      {
-        name: "William Wu",
-        title: "cards-titles-office-hour-instructor",
-        bio: "cards-bios-william",
-        img: noImage,
-      },
-      {
-        name: "Karina Hartman",
-        title: "cards-titles-lab-leader",
-        bio: "cards-bios-karina",
-        img: noImage,
-      },
-      {
-        name: "Erik Rankin",
-        title: "cards-titles-lab-leader",
-        bio: "cards-bios-erik",
-        img: noImage,
-      },
-      {
-        name: "Aditya Biradar",
-        title: "cards-titles-lab-leader",
-        bio: "cards-bios-aditya",
-        img: adityaImage,
-      },
-      {
-        name: "Caleb Xu",
-        title: "cards-titles-lab-leader",
-        bio: "cards-bios-caleb",
-        img: calebImage,
-      },
-      {
-        name: "Annie Nguyen",
-        title: "cards-titles-advertising-team",
-        bio: "cards-bios-annie",
-        img: annieImage,
-      },
-      {
-        name: "Jasmine Zeng",
-        title: "cards-titles-advertising-team-and-lab-leader",
-        bio: "cards-bios-jasmine",
-        img: noImage,
-      },
-      {
-        name: "Sean McReynolds",
-        title: "cards-titles-lab-leader",
-        bio: "cards-bios-sean",
-        img: seanImage,
-      },
-      {
-        name: "Alyssa Nomura",
-        title: "cards-titles-lab-leader",
-        bio: "cards-bios-alyssa",
-        img: alyssaImage,
       }
-      /*
-      {
-        name: "Jerome Conkright",
-        title: "cards-titles-lab-leader",
-        bio: "cards-bios-jerome",
-        img: noImage,
-      },
-      */
+      // {
+      //   name: "Bryce Elphingstone",
+      //   title: "cards-titles-lab-leader",
+      //   bio: "cards-bios-bryce",
+      //   img: noImage,
+      // },
+      // {
+      //   name: "Joseph Bolduc",
+      //   title: "cards-titles-lab-leader",
+      //   bio: "cards-bios-joseph",
+      //   img: josephImage,
+      // },
+      // {
+      //   name: "William Wu",
+      //   title: "cards-titles-office-hour-instructor",
+      //   bio: "cards-bios-william",
+      //   img: noImage,
+      // },
+      // {
+      //   name: "Karina Hartman",
+      //   title: "cards-titles-lab-leader",
+      //   bio: "cards-bios-karina",
+      //   img: noImage,
+      // },
+      // {
+      //   name: "Erik Rankin",
+      //   title: "cards-titles-lab-leader",
+      //   bio: "cards-bios-erik",
+      //   img: noImage,
+      // },
+      // {
+      //   name: "Aditya Biradar",
+      //   title: "cards-titles-lab-leader",
+      //   bio: "cards-bios-aditya",
+      //   img: adityaImage,
+      // },
+      // {
+      //   name: "Caleb Xu",
+      //   title: "cards-titles-lab-leader",
+      //   bio: "cards-bios-caleb",
+      //   img: calebImage,
+      // },
+      // {
+      //   name: "Annie Nguyen",
+      //   title: "cards-titles-advertising-team",
+      //   bio: "cards-bios-annie",
+      //   img: annieImage,
+      // },
+      // {
+      //   name: "Jasmine Zeng",
+      //   title: "cards-titles-advertising-team-and-lab-leader",
+      //   bio: "cards-bios-jasmine",
+      //   img: noImage,
+      // },
+      // {
+      //   name: "Sean McReynolds",
+      //   title: "cards-titles-lab-leader",
+      //   bio: "cards-bios-sean",
+      //   img: seanImage,
+      // },
+      // {
+      //   name: "Alyssa Nomura",
+      //   title: "cards-titles-lab-leader",
+      //   bio: "cards-bios-alyssa",
+      //   img: alyssaImage,
+      // }
+      
     ];
 
     this.state = { card_data: card_data, visibility: false };

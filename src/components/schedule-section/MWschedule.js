@@ -6,7 +6,7 @@ import "./../../fonts.css";
 import ScheduleItem from "./schedule-item";
 
 export default withTranslation()(
-  class ScheduleSection extends Component {
+  class MWScheduleSection extends Component {
     constructor(props) {
       super(props);
       this.domRef = React.createRef();
@@ -28,14 +28,13 @@ export default withTranslation()(
     render() {
       const t = this.props.t;
       let schedule = [
+        { name: t('arrival'), time: "8:30", long: false },
         { name: t('lesson-one'), time: "9:00", long: false },
         { name: t('project-one'), time: "10:00", long: false },
         { name: t('lunch'), time: "12:00", long: false },
         { name: t('lesson-two'), time: "1:00", long: false },
         { name: t('project-two'), time: "2:00", long: false },
         { name: t('day-ends'), time: "3:30", long: true },
-        { name: t('office-hours-start'), time: "4:00", long: true },
-        { name: t('office-hours-end'), time: "6:00", long: true },
       ];
 
       let jsx_schedule = [];
@@ -54,7 +53,7 @@ export default withTranslation()(
           }
         >
           <div id="schedule-section-header">
-            <h1 id="schedule-section-header-text">{t('schedule-header')}</h1>
+            <h1 id="schedule-section-header-text">{t('MWschedule-header')}</h1>
           </div>
           <div id="schedule-section-items">{jsx_schedule}</div>
         </div>

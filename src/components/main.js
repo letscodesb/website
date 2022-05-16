@@ -6,11 +6,15 @@ import ReactGA from "react-ga";
 // Components
 import Header from "./header/header.js";
 import TeamSection from "./team-section/team-section.js";
-import CurriculumSection from "./curriculum-section/curriculum";
+import PythonCurriculumSection from "./curriculum-section/python-curriculum";
+import GameCurriculumSection from "./curriculum-section/game-curriculum"
+import WebCurriculumSection from "./curriculum-section/web-curriculum";
 import MissionStatementSection from "./mission-statement-section/mission-statement-section";
 import SessionsSection from "./sessions-section/sessions-section";
-import ScheduleSection from "./schedule-section/schedule";
-import SignupSection from "./signup-section/signup-section";
+import MWScheduleSection from "./schedule-section/MWschedule";
+import THScheduleSection from "./schedule-section/THschedule";
+import FScheduleSection from "./schedule-section/Fschedule";
+import GoogleSignupSection from "./signup-section/googlesignup-section";
 import ContactSection from "./contact-section/contact";
 import Popup from "./popup/popup"; 
 import LanguageContext from "./../contexts/LanguageContext";
@@ -27,14 +31,18 @@ class MainPage extends React.Component {
         <body>
           <div id="wrapper">
             <LanguageContext.Provider value={lang}>
-              <Popup/>
+              
               <Header />
               <TeamSection />
-              <CurriculumSection />
+              <PythonCurriculumSection/>
+              <GameCurriculumSection/>
+              <WebCurriculumSection/>
               <MissionStatementSection />
               <SessionsSection />
-              <ScheduleSection />
-              <SignupSection />
+              <MWScheduleSection />
+              <THScheduleSection/>
+              <FScheduleSection/>
+              <GoogleSignupSection/>
               <ContactSection />
             </LanguageContext.Provider>
           </div>

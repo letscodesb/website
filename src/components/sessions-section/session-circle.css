@@ -1,7 +1,7 @@
 .session-circle {
   margin: 0;
-  height: 20vw;
-  width: 20vw;
+  height: 25vw;
+  width: 40vw;
   background: linear-gradient(105.06deg, #ffc071 4.03%, #ff8d4b 107.3%);
   box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.25);
   border-radius: 360px;
@@ -29,8 +29,8 @@
 }
 
 .big-circle {
-  height: 23vw;
-  width: 23vw;
+  height: 30vw;
+  width: 40vw;
   margin-top: -3%;
 }
 
@@ -61,11 +61,8 @@
 
   .big-circle {
     height: 25vh;
-    width: 25vh;
+    width: 35vh;
     margin-top: -8%;
-  }
-
-  .session-circle-header {
   }
 }
 
