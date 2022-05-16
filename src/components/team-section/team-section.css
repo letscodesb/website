@@ -42,11 +42,13 @@
 #team-card-row {
   display: flex;
   flex-wrap: nowrap;
-  overflow-x: scroll;
   white-space: nowrap;
+  overflow: scroll;
   cursor: grab;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
+  padding-left: 25%;
+  padding-right: 25%;
 }
 
 #team-card-row::-webkit-scrollbar {

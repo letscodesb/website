@@ -1,11 +1,11 @@
 {
-    "header-description" : "Let's Code Spring Branch es un campamento de codificación virtual gratuito de una semana durante el verano para todos los estudiantes de secundaria de SBISD. El curso se imparte en el lenguaje de programación Python y no se necesita experiencia previa en codificación. Hay 3 sesiones para elegir, y cada alumno tendrá una experiencia muy personalizada con su instructor.",
+    "header-description" : "Let's Code Spring Branch es un campamento de codificación gratuito de una semana de duración durante el verano para todos los estudiantes de secundaria de SBISD. El campamento ofrece cursos de programación Python, desarrollo de juegos y desarrollo web. No se necesita experiencia previa en codificación. Hay 2 sesiones para elegir de. El campamento se lleva a cabo en Stratford High School (14555 Fern Dr) de lunes a jueves. Los estudiantes presentarán su proyecto final en Zoom el viernes porque las escuelas de SBISD están cerradas los viernes durante el verano.",
     "hamburger-home" : "Hogar",
-    "hamburger-curriculum" : "Plan de Estudios",
+    "hamburger-curriculum" : "Cursos",
     "hamburger-enroll" : "Inscribirse",
     "hamburger-contact" : "Contacto",
 
-    "cards-header" : "Nuestro Equipo",
+    "cards-header" : "Nuestro Equipo Liderazgo",
     "cards-subheader-mobile" : "Desplácese hacia la derecha para ver",
     "cards-titles-president-and-lab-leader" : "Presidente y Líder de Laboratorio",
     "cards-titles-vice-president-and-lab-leader" : "Vicepresidento y Líder de Laboratorio",
@@ -15,9 +15,9 @@
     "cards-titles-advertising-team" : "Equipo de Publicidad",
     "cards-titles-advertising-team-and-lab-leader" : "Líder de Laboratorio y Equipo de Publicidad",
 
-    "cards-bios-devon" : "Devon Schwartz es un estudiante de último año en Stratford High School. Planea estudiar ciencias de la computación e inteligencia artificial cuando ingrese a la universidad y ha estado programando durante 3 años. Actualmente trabaja como instructor en Code Ninjas junto a Neil Aylor, donde enseña a los niños en la escuela primaria y secundaria cómo programar. Fuera de la programación y la escuela, es miembro del equipo de debate de Stratford y del teatro Stratford. También le encanta cocinar y andar en bicicleta.",
-    "cards-bios-neil" : "Neil Aylor es un estudiante de último año en Stratford High School. Planea perseguir inteligencia artificial y ciencia de datos y ha estado programando durante 6 años. Enseña código a estudiantes de primaria y secundaria en CodeNinjas con Devon, y está involucrado en teatro y el equipo de debate, además de ser presidente tanto del Club de Ciencias de la Computación de Stratford como del Club de Ajedrez. ¡También escribió todo el código para el sitio web en el que estás leyendo esto!",
-    "cards-bios-jean" : "Jean Hoang es un estudiante de tercer año en Stratford High School y el Spring Branch Academic Institute, un programa para estudiantes académicamente dotados. Ella planea estudiar ciencias de la computación e inteligencia artificial cuando ingrese a la universidad. Ha estado programando durante 7 años y ha desarrollado un sitio web para la práctica dental de sus padres, Dental Suite. Jean también trabajó con un campamento de verano AI4All organizado por la Universidad de Stanford, que se centró principalmente en la biología computacional. Fuera de la programación y la escuela, Jean practica artes marciales chinas. También le encanta leer, ver K-Dramas y anime, y escuchar K-Pop.",
+    "cards-bios-devon" :"Devon Schwartz es un ex estudiante de último año en Stratford High School y ha estado programando durante 4 años. Se está especializando en ciencias de la computación en la Universidad de Texas en Austin. Es el ex vicepresidente del club de Ciencias de la Computación de Stratford y el ex capitán extemporáneo en el Equipo de Debate de Stratford. Afuera de la escuela, a Devon le gusta andar en bicicleta y cocinar.",
+    "cards-bios-neil" : "Neil Aylor es un ex estudiante de último año en Stratford High School. Se está especializando en informática en Texas A&M y ha estado programando durante 7 años. Es el ex presidente del Stratford Chess Club y del Stratford Computer Science Club. También escribió todos los código para el sitio web en el que estás leyendo esto!",
+    "cards-bios-jean" : "Jean Hoang es una estudiante de último año en Stratford High School y el Instituto Académico Spring Branch, un programa para estudiantes académicamente dotados. Planea dedicarse a las ciencias de la computación y la inteligencia artificial cuando ingrese a la universidad. Ha estado programando durante 8 años y ha desarrollado un sitio web para la práctica dental de sus padres, Dental Suite. Jean también trabajó con un campamento de verano AI4All organizado por la Universidad de Stanford, que se centró principalmente en la biología computacional. Fuera de la programación y la escuela, Jean practica artes marciales chinas. También le encanta leer, ver K-Dramas y anime, y escucha K-Pop.",
     "cards-bios-bryce" : "Bryce Elphingstone es un estudiante de primer año universitario en ascenso en Texas A&M, donde estudiará Ingeniería General. Ha estado programando durante 7 años y actualmente está trabajando en hacer un juego de ajedrez que funciona con inteligencia artificial que usa datos de jugadores en Internet. Fuera de la programación y la escuela, sus intereses incluyen la química y los videojuegos. También es miembro de la banda de Stratford High School.",
     "cards-bios-joseph" : "Joseph Buldoc es un estudiante de último año en Stratford High School. Planea estudiar Ciencias de la Computación e Ingeniería cuando ingrese a la universidad y ha estado programando durante 4 años. Fuera de la programación y la escuela, Joseph disfruta creando deepfakes, impresión 3D y jugando al ajedrez.",
     "cards-bios-william" : "William Wu es un estudiante de tercer año en Stratford High School. Planea seguir una carrera relacionada con STEM que involucre ciencias de la computación. Aunque William ha estado programando desde muy joven, comenzó a tomarse en serio la programación en sexto grado. Fuera de la escuela, William está interesado en la robótica, en la que compitió en el medio. También le interesa la biología marina y dibuja en su tiempo libre.",
@@ -31,28 +31,29 @@
     "cards-bios-jerome" : "Jerome Conkright es un estudiante de primer año en la universidad que planea especializarse en ciencias de la computación. Ha estado programando durante 4 años, y fuera de la escuela y la programación, disfruta del equipo de debate de SHS y del boxeo.",
     "cards-bios-alyssa" : "Alyssa Nomura es una estudiante de último año en Stratford High School. Ha estado programando durante dos años y ha sido tutora de estudiantes de primaria y secundaria en materias de matemáticas e inglés. Alyssa planea obtener una licenciatura en ingeniería química. Fuera de la escuela, le gusta leer, caminar y cocinar.",
 
-    "curriculum-header" : "Plan de Estudios",
-    "curriculum-variables" : "Variables",
-    "curriculum-loops" : "Bucles",
-    "curriculum-oop" : "Programación Orientada a Objetos",
-    "curriculum-packages" : "Paquetes de Python",
-    "curriculum-functions" : "Funciones",
-    "curriculum-lists" : "Liza",
-    "curriculum-algorithms" : "Algoritmos",
-    "curriculum-final-project" : "Proyecto Final",
+    "python-camp": "Python Camp introduce a los estudiantes a los conceptos básicos de la programación. Esto incluye la creación de variables, el uso de declaraciones if-then y algoritmos. Hay un proyecto final al final donde los estudiantes pueden formar equipos con otros y usar las habilidades que aprendieron para crear un programa único",
+    "game-camp": "El campamento de desarrollo de juegos presenta a los estudiantes los conceptos básicos del desarrollo de juegos. Esto incluye el uso de Scratch y Pygame para crear juegos en 2D. Hay un proyecto final al final en el que los estudiantes pueden usar cualquier plataforma de desarrollo de juegos que deseen para crear un juego en 2D único. ", 
+    "web-camp": "El campamento de desarrollo web introduce a los estudiantes a los conceptos básicos de HTML, JavaScript y CSS. Esto incluirá la creación de sitios web y aplicaciones web divertidas. Hay un proyecto final en la educación en el que los estudiantes se unen a otros para desarrollar el sitio web que elijan.",
+
 
 
     "mission-header" : "Nuestra Misión",
-    "mission-statement" : "Queríamos crear un campamento de codificación para SBISD que respetara la salud pública de todos los estudiantes y estableciera una comunidad de ciencias de la computación más sólida en el distrito. Creemos que la mejor manera de hacer esto es brindar la experiencia de un campamento de codificación premium sin costo alguno para los estudiantes desatendidos del distrito.",
+    "mission-statement" : "Queremos crear un campamento de codificación gratuito para todos los estudiantes de secundaria en Spring Branch que sea divertido y atractivo. Aunque la mayoría de los campamentos de codificación pueden costar cientos de dólares, creemos que la informática debe ser accesible para todos.",
 
-    "session-1":"Junio 7 - 11",
+    "session-1":"Junio 6 - 10",
     "session-1-desc":"Sesión 1",
-    "session-2":"Junio 21 - 25",
+    "session-2":"Junio 13 - 17",
     "session-2-desc":"Sesión 2",
     "session-3":"Julio 5 - 9",
     "session-3-desc":"Sesión 3",
 
-    "schedule-header" : "Horario del Campamento",
+    "MWschedule-header" : "Lunes - Miércoles Horario del Campamento",
+    "THschedule-header": "Jueves Horario del Campamento",
+    "Fschedule-header": "Viernes Horario del Campamento (Zoom)",
+    "log-in": "Iniciar Sesión en el Zoom de Campamento",
+    "presentation": "Presentar el Proyecto Final",
+    "q/a": "Q/A Session",
+    "arrival": "Llegar a Stratford",
     "lesson-one" : "Lección Uno",
     "project-one" : "Proyecto Uno",
     "lunch" : "Almuerzo",
@@ -61,8 +62,12 @@
     "day-ends" : "Termina el Día",
     "office-hours-start" : "Inicio Horario de Oficina",
     "office-hours-end" : "Fin Horario de Oficina",
+    "introduce-project": "Presentación del Proyecto Final",
+    "final-project": "Trabajo en Proyecto Final",
 
-    "enroll-header":"Inscribirse",
+
+
+    "enroll-header":"Haga Clic Aquí Para Inscribirse",
     "enroll-subheader":"Usted Recibirá un Email de Confirmación",
     "enroll-parent-first-name":"Nombre del Padre",
     "enroll-student-first-name":"Nombre del Estudiante",
@@ -80,7 +85,7 @@
 
     "contact-us":"Contacta con Nosotros",
     "president":"Presidente",
-    "vice-president":"Vicepresidente",
+    "teacher-sponsor":"Profesor Patrocinadoro",
     "email":"Correo Electrónico",
     "phone":"Teléfono"
 

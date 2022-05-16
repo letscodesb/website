@@ -25,8 +25,8 @@
   height: 420px;
   width: 420px;
   */
-  height: 45vh;
-  width: 45vh;
+  height: 90vh;
+  width: 90vh;
   background: #f9f9f9;
   border: 1px solid #ddd5d5;
   box-sizing: border-box;
@@ -40,13 +40,13 @@
 
 .blob-header {
   font-weight: 300;
-  font-size: 48px;
+  font-size: 28px;
   margin-bottom: 0;
 }
 
 .blob-subheader {
   font-weight: 200;
-  font-size: 40px;
+  font-size: 28px;
 }
 
 .email-line,
@@ -129,12 +129,12 @@
   }
 
   .blob-header {
-    font-size: 26px;
+    font-size: 18px;
     margin: 0;
   }
 
   .blob-subheader {
-    font-size: 24px;
+    font-size: 18px;
     margin: 0;
   }
 
@@ -153,7 +153,7 @@
     width: 420px;
     */
     height: 90vw;
-    width: 80vw;
+    width: 100vw;
     margin-top:10%;
   }
 } /* max-width 640px, mobile-only styles, use when QAing mobile issues */

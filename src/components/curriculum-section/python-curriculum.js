@@ -3,7 +3,7 @@ import {withTranslation} from "react-i18next";
 import "./curriculum.css";
 import "../../fonts.css";
 
-class CurriculumSection extends Component {
+class PythonCurriculumSection extends Component {
   constructor(props) {
     super(props);
     this.domRef = React.createRef();
@@ -26,10 +26,10 @@ class CurriculumSection extends Component {
     const t = this.props.t;
     return (
       <div id="curriculum-section" className={this.state.visibility ? ' visible' : ' hidden'} ref={this.domRef}>
-        <h2 id="curriculum-section-header">{t('curriculum-header')}</h2>
+        <h2 id="curriculum-section-header">{t('Python Camp')}</h2>
 
-        <div id="list-section">
-          <ul id="curriculum-list-1" class="curriculum-list">
+        <div id="description-section">
+          {/* <ul id="curriculum-list-1" class="curriculum-list">
             <li>{t('curriculum-variables')}</li>
             <li>{t('curriculum-loops')}</li>
             <li>{t('curriculum-oop')}</li>
@@ -40,11 +40,12 @@ class CurriculumSection extends Component {
             <li>{t('curriculum-lists')}</li>
             <li>{t('curriculum-algorithms')}</li>
             <li>{t('curriculum-final-project')}</li>
-          </ul>
+          </ul> */}
+          <p class="curriculum-description" ref={this.domRef}>{t('python-camp')}</p>
         </div>
-      </div>
+      </div>  
     );
   }
 }
 
-export default withTranslation()(CurriculumSection);
+export default withTranslation()(PythonCurriculumSection);

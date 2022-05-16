@@ -33,14 +33,13 @@ class SessionsSection extends Component {
           this.state.visibility ? " visible" : " hidden"
         }
       >
-        <SessionCircle id="circle-1" session_num="1" session={t('session-1')} />
+        <SessionCircle id="circle-1" session_num="1" session={t('session-1')} big = {true}/>
         <SessionCircle
           id="circle-2"
           session_num="2"
           session={t('session-2')}
           big={true}
         />
-        <SessionCircle id="circle-3" session_num="3" session={t('session-3')} />
       </div>
     );
   }

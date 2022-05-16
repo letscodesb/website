@@ -38,8 +38,8 @@ export default withTranslation()(
           <div id="contact-section-blobs">
             <div className="contact-blob" id="contact-blob-1" ref={this.domRef}>
               <div className="blob-header-container">
-                <h1 className="blob-header">Devon Schwartz</h1>
-                <h2 className="blob-subheader">{t("president")}</h2>
+                <h1 className="blob-header">Let's Code Leadership Team</h1>
+                {/* <h2 className="blob-subheader">{t("president")}</h2> */}
               </div>
 
               <div className="info-container">
@@ -53,18 +53,18 @@ export default withTranslation()(
                 </div>
                 <div className="content-col">
                   <h1 className="content" id="email-content">
-                    devon.s.schwartz@gmail.com
+                    letscodesbisd@gmail.com
                   </h1>
                   <h1 className="content" id="phone-content">
-                    +1-832-503-2007
+                    +1-832-474-2520
                   </h1>
                 </div>
               </div>
             </div>
             <div className="contact-blob" id="contact-blob-2">
               <div className="blob-header-container">
-                <h1 className="blob-header">Neil Aylor</h1>
-                <h2 className="blob-subheader">{t("vice-president")}</h2>
+                <h1 className="blob-header">Charles "Dave" Avis</h1>
+                <h2 className="blob-subheader">{t("teacher-sponsor")}</h2>
               </div>
 
               <div className="info-container">
@@ -78,10 +78,10 @@ export default withTranslation()(
                 </div>
                 <div className="content-col">
                   <h1 className="content" id="email-content">
-                    neilaylor@hotmail.com
+                    charles.avis@springbranchisd.com
                   </h1>
                   <h1 className="content" id="phone-content">
-                    +1-713-352-1443
+                    NA
                   </h1>
                 </div>
               </div>
