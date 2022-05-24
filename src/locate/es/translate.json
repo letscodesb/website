@@ -1,9 +1,5 @@
 {
-<<<<<<< Updated upstream
-    "header-description" : "Let's Code Spring Branch es un campamento de codificación gratuito de una semana de duración durante el verano para todos los estudiantes de secundaria de SBISD. El campamento ofrece cursos de programación Python, desarrollo de juegos y desarrollo web. No se necesita experiencia previa en codificación. Hay 2 sesiones para elegir de. El campamento se lleva a cabo en Stratford High School (14555 Fern Dr) de lunes a jueves. Los estudiantes presentarán su proyecto final en Zoom el viernes porque las escuelas de SBISD están cerradas los viernes durante el verano. Hay máximo de 50 estudiantes por sesión.",
-=======
     "header-description" : "Let's Code Spring Branch es un campamento de codificación gratuito de una semana de duración durante el verano para todos los estudiantes de secundaria de SBISD. El campamento ofrece cursos de programación Python, desarrollo de juegos y desarrollo web. No se necesita experiencia previa en codificación. Los estudiantes pueden inscribirse en una de las dos sesiones (no en ambas). El campamento se lleva a cabo en Stratford High School (14555 Fern Dr) de lunes a jueves. Los estudiantes presentarán su proyecto final en Zoom el viernes porque las escuelas de SBISD están cerradas los viernes durante el verano.",
->>>>>>> Stashed changes
     "hamburger-home" : "Hogar",
     "hamburger-curriculum" : "Cursos",
     "hamburger-enroll" : "Inscribirse",
