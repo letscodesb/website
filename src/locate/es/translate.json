@@ -1,5 +1,5 @@
 {
-    "header-description" : "Let's Code Spring Branch es un campamento de codificación gratuito de una semana de duración durante el verano para todos los estudiantes de secundaria de SBISD. El campamento ofrece cursos de programación Python, desarrollo de juegos y desarrollo web. No se necesita experiencia previa en codificación. Hay 2 sesiones para elegir de. El campamento se lleva a cabo en Stratford High School (14555 Fern Dr) de lunes a jueves. Los estudiantes presentarán su proyecto final en Zoom el viernes porque las escuelas de SBISD están cerradas los viernes durante el verano.",
+    "header-description" : "Let's Code Spring Branch es un campamento de codificación gratuito de una semana de duración durante el verano para todos los estudiantes de secundaria de SBISD. El campamento ofrece cursos de programación Python, desarrollo de juegos y desarrollo web. No se necesita experiencia previa en codificación. Los estudiantes pueden inscribirse en una de las dos sesiones (no en ambas). El campamento se lleva a cabo en Stratford High School (14555 Fern Dr) de lunes a jueves. Los estudiantes presentarán su proyecto final en Zoom el viernes porque las escuelas de SBISD están cerradas los viernes durante el verano.",
     "hamburger-home" : "Hogar",
     "hamburger-curriculum" : "Cursos",
     "hamburger-enroll" : "Inscribirse",
@@ -40,10 +40,10 @@
     "mission-header" : "Nuestra Misión",
     "mission-statement" : "Queremos crear un campamento de codificación gratuito para todos los estudiantes de secundaria en Spring Branch que sea divertido y atractivo. Aunque la mayoría de los campamentos de codificación pueden costar cientos de dólares, creemos que la informática debe ser accesible para todos.",
 
-    "session-1":"Junio 6 - 10",
-    "session-1-desc":"Sesión 1",
+    "session-1":"Junio 6 - 10 ",
+    "session-1-desc":"Sesión 1- 50 Personas máx",
     "session-2":"Junio 13 - 17",
-    "session-2-desc":"Sesión 2",
+    "session-2-desc":"Sesión 2- 50 Personas máx",
     "session-3":"Julio 5 - 9",
     "session-3-desc":"Sesión 3",
 

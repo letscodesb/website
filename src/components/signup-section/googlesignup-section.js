@@ -29,6 +29,7 @@ class GoogleSignupSection extends Component {
             id = "signup-section"
             ref = { this.domRef }
             className = { this.state.visibility ? " visible" : " hidden" }>
+
                 <a href="https://forms.gle/M7tDsaLCC2VJgXUe9" style = {{fontSize: "400%", color:"white", textDecoration:'none', fontWeight:"bold"}}>{t("enroll-header")}</a>
             </div>
         );

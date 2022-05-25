@@ -1,5 +1,5 @@
 {
-    "header-description" : "Let’s Code Spring Branch is a free week-long coding camp during the summer for all SBISD middle schoolers. The camp offers courses in Python Programming, Game Development, and Web Development. No prior coding experience is needed. There are 2 sessions to choose from. The camp is hosted at Stratford High School (14555 Fern Dr) on Monday through Thursday. The students will present their final project on Zoom on Friday because SBISD schools are closed on Friday during the summer.",
+    "header-description" : "Let’s Code Spring Branch is a free week-long coding camp during the summer for all SBISD middle schoolers. The camp offers courses in Python Programming, Game Development, and Web Development. No prior coding experience is needed. Students may enroll in one out of the two sessions (not both). The camp is hosted at Stratford High School (14555 Fern Dr) on Monday through Thursday. The students will present their final project on Zoom on Friday because SBISD schools are closed on Friday during the summer.",
     "hamburger-home" : "Home",
     "hamburger-curriculum" : "Courses",
     "hamburger-enroll" : "Enroll",
@@ -42,9 +42,9 @@
     "mission-statement" : "We want to create a free coding camp for all middle school students in Spring Branch that's fun and engaging. Even though most coding camps may cost hundreds of dollars, we believe that computer science should be accessible to everyone.",
 
     "session-1":"June 6 - 10",
-    "session-1-desc":"Session 1",
-    "session-2":"June 13 - 17",
-    "session-2-desc":"Session 2",
+    "session-1-desc":"Session 1 - 50 People Max",
+    "session-2":"June 13 - 17 ",
+    "session-2-desc":"Session 2- 50 People Max",
     "session-3":"July 5 - 9",
     "session-3-desc":"Session 3",
 
