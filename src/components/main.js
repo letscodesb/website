@@ -9,6 +9,7 @@ import TeamSection from "./team-section/team-section.js";
 import PythonCurriculumSection from "./curriculum-section/python-curriculum";
 import GameCurriculumSection from "./curriculum-section/game-curriculum"
 import WebCurriculumSection from "./curriculum-section/web-curriculum";
+import UnityCurriculumSection from "./curriculum-section/unity-curriculum";
 import MissionStatementSection from "./mission-statement-section/mission-statement-section";
 import SessionsSection from "./sessions-section/sessions-section";
 import MWScheduleSection from "./schedule-section/MWschedule";
@@ -37,6 +38,7 @@ class MainPage extends React.Component {
               <PythonCurriculumSection/>
               <GameCurriculumSection/>
               <WebCurriculumSection/>
+              <UnityCurriculumSection/>
               <MissionStatementSection />
               <SessionsSection />
               <MWScheduleSection />

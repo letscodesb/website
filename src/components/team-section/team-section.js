@@ -5,18 +5,9 @@ import { withTranslation } from "react-i18next";
 
 import "./team-section.css";
 
-const devonImage = require("./../../resources/team-pictures/devon.png");
-const annieImage = require("./../../resources/team-pictures/annie.jpeg");
-const jeanImage = require("./../../resources/team-pictures/jean.jpg");
-const josephImage = require("./../../resources/team-pictures/joseph.jpg");
-//const neilImage = require("./../../resources/team-pictures/neil.jpg");
-const neilImage = require("./../../resources/team-pictures/neil-3.jpg");
-const seanImage = require("./../../resources/team-pictures/sean.jpg");
-const adityaImage = require("./../../resources/team-pictures/aditya.jpg");
-const alyssaImage = require('./../../resources/team-pictures/alyssa.jpg');
-const calebImage = require('./../../resources/team-pictures/caleb.jpeg')
 
-const noImage = require("./../../resources/team-pictures/lightGray.png");
+const noImage = require("./../../resources/team-pictures/gray.png");
+const jeanImage = require("./../../resources/team-pictures/jean.jpg");
 
 class TeamSection extends Component {
   constructor(props) {
@@ -25,92 +16,25 @@ class TeamSection extends Component {
     let card_data = [
       {
         name: "Jean Hoang",
-        title: "cards-titles-president-and-lab-leader",
+        title: "cards-titles-vice-president-and-lab-leader",
         bio: "cards-bios-jean",
         img: jeanImage,
         longBio: true,
       },
       {
-        name: "Devon Schwartz",
-        title: "cards-titles-vice-president-and-lab-leader",
-        bio: "cards-bios-devon",
-        img: devonImage,
+        name: "Griffin Ferguson",
+        title: "cards-titles-president-and-lab-leader",
+        bio: "cards-bios-griffin",
+        img: noImage,
         medBio: true,
       },
       {
-        name: "Neil Aylor",
+        name: "Grace Abdelnour",
         title: "cards-titles-vice-president-and-lab-leader",
-        bio: "cards-bios-neil",
-        img: neilImage,
+        bio: "cards-bios-grace",
+        img: noImage,
         medBio: true,
       }
-      // {
-      //   name: "Bryce Elphingstone",
-      //   title: "cards-titles-lab-leader",
-      //   bio: "cards-bios-bryce",
-      //   img: noImage,
-      // },
-      // {
-      //   name: "Joseph Bolduc",
-      //   title: "cards-titles-lab-leader",
-      //   bio: "cards-bios-joseph",
-      //   img: josephImage,
-      // },
-      // {
-      //   name: "William Wu",
-      //   title: "cards-titles-office-hour-instructor",
-      //   bio: "cards-bios-william",
-      //   img: noImage,
-      // },
-      // {
-      //   name: "Karina Hartman",
-      //   title: "cards-titles-lab-leader",
-      //   bio: "cards-bios-karina",
-      //   img: noImage,
-      // },
-      // {
-      //   name: "Erik Rankin",
-      //   title: "cards-titles-lab-leader",
-      //   bio: "cards-bios-erik",
-      //   img: noImage,
-      // },
-      // {
-      //   name: "Aditya Biradar",
-      //   title: "cards-titles-lab-leader",
-      //   bio: "cards-bios-aditya",
-      //   img: adityaImage,
-      // },
-      // {
-      //   name: "Caleb Xu",
-      //   title: "cards-titles-lab-leader",
-      //   bio: "cards-bios-caleb",
-      //   img: calebImage,
-      // },
-      // {
-      //   name: "Annie Nguyen",
-      //   title: "cards-titles-advertising-team",
-      //   bio: "cards-bios-annie",
-      //   img: annieImage,
-      // },
-      // {
-      //   name: "Jasmine Zeng",
-      //   title: "cards-titles-advertising-team-and-lab-leader",
-      //   bio: "cards-bios-jasmine",
-      //   img: noImage,
-      // },
-      // {
-      //   name: "Sean McReynolds",
-      //   title: "cards-titles-lab-leader",
-      //   bio: "cards-bios-sean",
-      //   img: seanImage,
-      // },
-      // {
-      //   name: "Alyssa Nomura",
-      //   title: "cards-titles-lab-leader",
-      //   bio: "cards-bios-alyssa",
-      //   img: alyssaImage,
-      // }
-      
     ];
 
     this.state = { card_data: card_data, visibility: false };

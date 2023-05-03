@@ -26,7 +26,7 @@ class WebCurriculumSection extends Component {
         const t = this.props.t;
         return (
             <div id="curriculum-section" className={this.state.visibility ? ' visible' : ' hidden'} ref={this.domRef}>
-                <h2 id="curriculum-section-header">{t('Web Development')}</h2>
+                <h2 id="curriculum-section-header">{t('Introduction to Web Development')}</h2>
 
                 <div id="description-section">
                     {/* <ul id="curriculum-list-1" class="curriculum-list">
