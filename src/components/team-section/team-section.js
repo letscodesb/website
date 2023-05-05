@@ -26,7 +26,7 @@ class TeamSection extends Component {
         title: "cards-titles-president-and-lab-leader",
         bio: "cards-bios-griffin",
         img: noImage,
-        medBio: true,
+        longBio: true,
       },
       {
         name: "Grace Abdelnour",
