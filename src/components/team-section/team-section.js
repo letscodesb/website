@@ -8,6 +8,8 @@ import "./team-section.css";
 
 const noImage = require("./../../resources/team-pictures/gray.png");
 const jeanImage = require("./../../resources/team-pictures/jean.jpg");
+const griffinImage = require("./../../resources/team-pictures/griffin.jpg");
+const graceImage = require("./../../resources/team-pictures/grace.jpg");
 
 class TeamSection extends Component {
   constructor(props) {
@@ -25,14 +27,14 @@ class TeamSection extends Component {
         name: "Griffin Ferguson",
         title: "cards-titles-president-and-lab-leader",
         bio: "cards-bios-griffin",
-        img: noImage,
+        img: griffinImage,
         longBio: true,
       },
       {
         name: "Grace Abdelnour",
         title: "cards-titles-vice-president-and-lab-leader",
         bio: "cards-bios-grace",
-        img: noImage,
+        img: graceImage,
         medBio: true,
       }
     ];

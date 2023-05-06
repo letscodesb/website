@@ -56,7 +56,7 @@ export default withTranslation()(
                     letscodesbisd@gmail.com
                   </h1>
                   <h1 className="content" id="phone-content">
-                    +1-832-474-2520
+                    +1-832-888-1184
                   </h1>
                 </div>
               </div>
