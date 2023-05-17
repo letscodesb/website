@@ -38,7 +38,6 @@ class MainPage extends React.Component {
               <PythonCurriculumSection/>
               <GameCurriculumSection/>
               <WebCurriculumSection/>
-              <UnityCurriculumSection/>
               <MissionStatementSection />
               <SessionsSection />
               <MWScheduleSection />
